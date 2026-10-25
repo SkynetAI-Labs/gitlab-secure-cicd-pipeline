@@ -33,7 +33,7 @@
     "errors": [],
     "warnings": []
   },
-  "gitlab_hosted_execution": "Not verified: pipeline simulation requires GitLab account identity verification",
+  "gitlab_hosted_execution": "Passed: pipeline 2985809359 on main; all seven required jobs succeeded after identity verification",
   "deployment": "Not performed; registry publish is a manual pipeline option",
   "scanner_limitations": [
     "Trivy warned that third-party SBOM metadata can affect vulnerability detection. Results remain scanner evidence, not proof of absence of vulnerabilities."
@@ -96,5 +96,6 @@
       "sha256": "31f4e403d55b0c8ce94d7a6a4c6ebf24e472c42170f63d5b92de4ae91c7f3285"
     }
   ],
-  "readme_rendering_evidence": "docs/evidence/readme-rendering.json"
+  "readme_rendering_evidence": "docs/evidence/readme-rendering.json",
+  "hosted_pipeline_evidence": "docs/evidence/hosted-pipeline.json"
 }

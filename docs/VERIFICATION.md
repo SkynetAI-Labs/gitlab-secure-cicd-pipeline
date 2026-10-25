@@ -1,6 +1,6 @@
 # Verification record
 
-Local verification on 25 October 2026. Machine-readable results and verified source-file SHA-256 hashes are in [verification-summary.json](evidence/verification-summary.json). Raw local reports are retained under ignored `reports/`; CI is configured to retain corresponding artifacts when it can run.
+Local verification on 25 October 2026. Machine-readable results and verified source-file SHA-256 hashes are in [verification-summary.json](evidence/verification-summary.json). Raw local reports are retained under ignored `reports/`. Hosted verification also passed in [pipeline 2985809359](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985809359); its structured results are recorded in [hosted-pipeline.json](evidence/hosted-pipeline.json). CI artifacts follow the configured retention periods.
 
 | Check | Observed result |
 | --- | --- |
@@ -16,7 +16,7 @@ Local verification on 25 October 2026. Machine-readable results and verified sou
 | Container black-box tests | Health, allow/block decisions, and invalid input passed |
 | Trivy image scan | Final Alpine runtime: zero HIGH/CRITICAL findings with no suppressions and no ignore-unfixed flag |
 | GitLab static CI lint | Valid, no errors or warnings |
-| GitLab hosted pipeline | Not verified: account identity verification required by GitLab before CI jobs can run |
+| GitLab hosted pipeline | Passed: all seven required jobs; 52 tests, 100% line/branch coverage, zero scanner findings; optional registry publication left manual |
 
 The initial Debian image was correctly rejected with 48 HIGH findings across OS packages and bundled Python packaging components. It was replaced with the official digest-pinned Alpine base, and pip/ensurepip were removed from the runtime image. The hardened image passed the unchanged gate; this was remediation, not an exception.
 
@@ -35,6 +35,6 @@ The verified implementation was published at commit `7e036848013fd5192ad25f6996b
 - [GitLab canonical project](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline).
 - [Separate GitHub mirror](https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline). HTTP 404 was confirmed before creating this public repository; it was checked as empty and writable before the first push. Lab 03 was not changed.
 - Both public README pages returned HTTP 200 in Chromium. Their relative-path banner loaded at its expected natural dimensions of 1800 × 640 pixels, rendered at 763 × 271 on GitLab and 838 × 298 on GitHub in the verification viewport. The banner uses the exact requested title and the label “Independent Portfolio Project”. See [rendering evidence](evidence/readme-rendering.json). Cropped browser screenshots are retained locally under ignored `reports/`.
-- [GitLab pipeline 2985772695](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985772695) failed before creating jobs; static CI lint reports no YAML errors. A fresh pipeline simulation returned `Identity verification is required in order to run CI jobs`. This is an account-level blocker, so no hosted job success is claimed.
+- [GitLab pipeline 2985772695](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985772695) failed before creating jobs; static CI lint reports no YAML errors. A fresh pipeline simulation returned `Identity verification is required in order to run CI jobs`. This was an account-level blocker; the owner subsequently completed identity verification, and the next manually started `main` pipeline passed without application or CI configuration changes.
 
-The owner must complete **Verify my account** in GitLab's alert banner and then start a new `main` pipeline. Follow only the identity checks requested in GitLab itself. See [operations](OPERATIONS.md#current-hosted-ci-blocker-account-identity-verification) and [GitLab's official instructions](https://docs.gitlab.com/ci/debugging/#error-identity-verification-is-required-in-order-to-run-ci-jobs). Runner-specific behavior can only be verified after that blocker clears. No registry image was pushed and no production deployment was performed.
+The identity-verification prerequisite is resolved. [Pipeline 2985809359](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985809359) passed on commit `57278aa0d6b69c0044a252506ecd769726fb7bf3`: all seven required jobs succeeded, including hosted container smoke tests and the HIGH/CRITICAL image gate. The optional `publish_image` job was left manual. Structured artifacts confirm 52 tests, no failures/errors/skips, 100% line and branch coverage, and zero findings from Bandit, runtime/tooling audits, history/tree secret scans, and the image scan. No registry image was pushed and no production deployment was performed. See [operations](OPERATIONS.md#resolved-hosted-ci-prerequisite-account-identity-verification) for the account prerequisite history.

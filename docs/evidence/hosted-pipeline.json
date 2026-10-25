@@ -1,0 +1,88 @@
+{
+  "verified_at_utc": "2026-10-25T03:57:12+00:00",
+  "pipeline": {
+    "id": 2985809359,
+    "sha": "57278aa0d6b69c0044a252506ecd769726fb7bf3",
+    "ref": "main",
+    "status": "success",
+    "source": "api",
+    "web_url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985809359",
+    "created_at": "2026-10-25T03:53:45.472Z",
+    "finished_at": "2026-10-25T03:56:20.275Z",
+    "duration": 144
+  },
+  "jobs": [
+    {
+      "id": 17444610849,
+      "name": "publish_image",
+      "status": "manual",
+      "allow_failure": true,
+      "duration": null
+    },
+    {
+      "id": 17444610848,
+      "name": "image_scan",
+      "status": "success",
+      "allow_failure": false,
+      "duration": 28.283929
+    },
+    {
+      "id": 17444610847,
+      "name": "container_build",
+      "status": "success",
+      "allow_failure": false,
+      "duration": 49.972563
+    },
+    {
+      "id": 17444610846,
+      "name": "package",
+      "status": "success",
+      "allow_failure": false,
+      "duration": 24.558454
+    },
+    {
+      "id": 17444610845,
+      "name": "secret_detection",
+      "status": "success",
+      "allow_failure": false,
+      "duration": 9.824385
+    },
+    {
+      "id": 17444610844,
+      "name": "dependency_audit",
+      "status": "success",
+      "allow_failure": false,
+      "duration": 42.028556
+    },
+    {
+      "id": 17444610843,
+      "name": "static_analysis",
+      "status": "success",
+      "allow_failure": false,
+      "duration": 23.473942
+    },
+    {
+      "id": 17444610842,
+      "name": "quality_and_tests",
+      "status": "success",
+      "allow_failure": false,
+      "duration": 26.981364
+    }
+  ],
+  "artifacts_inspected": {
+    "tests": 52,
+    "failures": 0,
+    "errors": 0,
+    "skipped_tests": 0,
+    "line_coverage_percent": 100,
+    "branch_coverage_percent": 100,
+    "bandit_findings": 0,
+    "runtime_dependency_vulnerabilities": 0,
+    "tooling_dependency_vulnerabilities": 0,
+    "history_secret_findings": 0,
+    "tree_secret_findings": 0,
+    "image_high_critical_findings": 0
+  },
+  "registry_publication": "Optional publish_image job left manual; no registry publication or production deployment performed",
+  "project_fixes_required": "None: the existing implementation passed after account identity verification was completed"
+}

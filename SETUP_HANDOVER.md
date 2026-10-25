@@ -41,3 +41,7 @@ The earlier stop point above is preserved setup history. The owner subsequently 
 The owner explicitly selected the separate public GitHub mirror `SkynetAI-Labs/gitlab-secure-cicd-pipeline` and authorised creation if absent. The destination was confirmed absent, created publicly, and checked as empty with push/admin permission. Lab 03 was not changed. The hosted-CI identity-verification instructions are in `docs/OPERATIONS.md`.
 
 Source and the branded banner have been published to both approved repositories. Chromium verified actual image rendering in each public README. `docs/evidence/readme-rendering.json` records the result. The remaining hosted-CI blocker is GitLab account identity verification; local tests, scanner gates, container smoke checks, and static CI lint passed. No registry image or production deployment was published.
+
+## Hosted CI verified after identity verification
+
+The owner completed GitLab identity verification. New `main` pipeline [2985809359](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985809359) succeeded on commit `57278aa0d6b69c0044a252506ecd769726fb7bf3`, with all seven required jobs passing and optional `publish_image` left manual. Hosted artifacts show 52 passing tests, 100% line/branch coverage, and zero findings from the configured security gates. No application or pipeline fix was required. This resolves the account-level blocker described in the earlier history. See `docs/evidence/hosted-pipeline.json`. Registry publication and production deployment were not performed.
