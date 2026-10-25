@@ -9,11 +9,18 @@ Scope: the Lab 02 presentation and evaluation toolkit. Lab 01's source, CI, lock
 - Reviewed the competitive comparison, discovery/objection cards, pilot decision rules, and hiring-team walkthrough for unsupported security, pricing, customer, or commercial-result claims.
 - Authored Lab 02's banner from the established SVG visual system; retained its exact title, portfolio label, purple/black/white palette, editable SVG, and portable 1800 × 640 PNG.
 - Inspected spreadsheet formulas, input validation, empty-input safeguards, cached example outputs, and an independent arithmetic calculation. The Low/Base/High sheets are blank; incomplete options do not produce numeric totals. Inspected 45 blank CSV input rows. Confirmed no workbook macros or external data relationships.
-- Reviewed local links/anchors, external source reachability, the scoped diff, Lab 01 preservation, and redacted secret scans before publication. Machine-readable outcomes are recorded in `verification.json` when the checks finish.
+- Reviewed local links/anchors, external source reachability, the scoped diff, Lab 01 preservation, and redacted secret scans before publication. Machine-readable outcomes are recorded in [verification.json](verification.json).
 
-## Publication checks
+## Completed publication checks
 
-Publish only to the existing canonical GitLab project and its separate GitHub mirror. Verify the new Lab 02 README and banner in both public interfaces, plus main-README navigation. Keep the unchanged Lab 01 pipeline and optional registry-publication boundary intact. Exact URLs, image dimensions, and the final hosted pipeline result are recorded after publication; pending checks are not counted as passes.
+- Published Lab 02 to the existing [GitLab project README](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-02/README.md) and [GitHub mirror README](https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-02/README.md). No remote repository was created and GitHub Lab 03 was not touched.
+- Chromium followed the new main-README navigation to Lab 02 on both platforms. Both root pages returned HTTP 200, the original Lab 01 banner remained present, and the exact new title and workbook link rendered.
+- Both Lab 02 banners loaded at their expected natural dimensions of **1800 × 640**. At a 1440 × 1000 browser viewport, GitLab displayed the banner at 765 × 272 and GitHub at 1012 × 360. Cropped screenshots were visually reviewed and retained locally under ignored `reports/`.
+- Downloaded the published banner PNG and workbook from both platforms and compared SHA-256 hashes with the verified local files: all four matched.
+- [Pipeline 2986537496](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986537496) passed for publication commit `f3a9d7b1badaa80aa73e3c48ae8ac7f77485f7cd`, with all seven required jobs successful. Hosted JUnit/Cobertura artifacts confirm **52 passing tests**, no failures/errors/skips, and **100% line and branch coverage**. The hosted image report contains **zero HIGH/CRITICAL findings**. Optional registry publication remained manual; no deployment was performed.
+- Compared every existing Lab 01 file with successful baseline commit `6a6f51c7c26bb6bd5471a900b71b7e44148d8b67`: its 24 other tracked files remain byte-for-byte unchanged. Main README changes are confined to lab navigation; the original handover is preserved with appended continuation notes. Lab 01's CI configuration, application, tests, locks, evidence, case study, and assets were not replaced.
+
+The machine-readable record includes browser results, source-link status, download hashes, preserved-file hashes, workbook checks, and hosted evidence. Subsequent verification-record-only commits do not change Lab 01's implementation. Final publication also confirms both remote `main` branches match and the checkout is clean.
 
 ## Remaining evaluation gaps
 

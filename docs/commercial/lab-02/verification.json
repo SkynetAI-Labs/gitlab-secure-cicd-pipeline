@@ -2,10 +2,10 @@
   "verified_at_utc": "2026-10-25T13:12:12+00:00",
   "scope": "Independent portfolio documentation, banner and evaluation templates; no buyer pilot or paid-product evaluation",
   "local_checks": {
-    "checked_at_utc": "2026-10-25T13:08:50+00:00",
+    "checked_at_utc": "2026-10-25T13:30:02+00:00",
     "lab_01_baseline_commit": "6a6f51c7c26bb6bd5471a900b71b7e44148d8b67",
     "local_markdown_files": 9,
-    "local_link_targets_and_anchors_checked": 43,
+    "local_link_targets_and_anchors_checked": 44,
     "external_urls": [
       "https://docs.github.com/en/actions/get-started/understand-github-actions",
       "https://docs.github.com/en/billing/get-started/how-billing-works",
@@ -18,8 +18,11 @@
       "https://docs.gitlab.com/user/application_security/sast/#features",
       "https://docs.gitlab.com/user/application_security/vulnerability_report/",
       "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+      "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-02/README.md",
       "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
-      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985812654"
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-02/README.md",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985812654",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986537496"
     ],
     "lab_01_unchanged_files": [
       {
@@ -234,8 +237,106 @@
     "redaction": true
   },
   "publication": {
-    "destinations": "Existing GitLab project and approved GitHub mirror only",
-    "status": "Awaiting source publication and browser checks; not counted as completed yet"
+    "status": "Verified on both public platforms",
+    "source_publication_commit": "f3a9d7b1badaa80aa73e3c48ae8ac7f77485f7cd",
+    "browser_rendering": {
+      "checked_at_utc": "2026-10-25T13:14:09+00:00",
+      "method": "Public Chromium pages; followed main README navigation to Lab 02, loaded banner to natural size and captured image screenshots",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "checks": [
+        {
+          "platform": "GitLab",
+          "root_http_status": 200,
+          "navigation_href": "/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-02/README.md",
+          "lab_01_banner_present": true,
+          "lab_02_readme_url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-02/README.md",
+          "title_present": true,
+          "workbook_link_present": true,
+          "banner": {
+            "naturalWidth": 1800,
+            "naturalHeight": 640,
+            "renderedWidth": 765,
+            "renderedHeight": 272,
+            "source": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/docs/commercial/lab-02/assets/lab-02-banner.png"
+          },
+          "verified": true
+        },
+        {
+          "platform": "GitHub",
+          "root_http_status": 200,
+          "navigation_href": "/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-02/README.md",
+          "lab_01_banner_present": true,
+          "lab_02_readme_url": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-02/README.md",
+          "title_present": true,
+          "workbook_link_present": true,
+          "banner": {
+            "naturalWidth": 1800,
+            "naturalHeight": 640,
+            "renderedWidth": 1012,
+            "renderedHeight": 360,
+            "source": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/raw/main/docs/commercial/lab-02/assets/lab-02-banner.png"
+          },
+          "verified": true
+        }
+      ]
+    },
+    "hosted_pipeline_and_downloads": {
+      "pipeline": {
+        "id": 2986537496,
+        "sha": "f3a9d7b1badaa80aa73e3c48ae8ac7f77485f7cd",
+        "status": "success",
+        "web_url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986537496",
+        "finished_at": "2026-10-25T13:15:09.538Z"
+      },
+      "hosted_tests": {
+        "total_count": 52,
+        "success_count": 52,
+        "failed_count": 0,
+        "error_count": 0,
+        "skipped_count": 0
+      },
+      "image_high_critical_findings": 0,
+      "download_checks": [
+        {
+          "platform": "GitLab",
+          "file": "assets/lab-02-banner.png",
+          "url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/docs/commercial/lab-02/assets/lab-02-banner.png",
+          "matches_verified_local_file": true,
+          "sha256": "4ab0d9a919fe15dbafa162ac67ea678a6fa809a08bce49906f863401d026cf29"
+        },
+        {
+          "platform": "GitLab",
+          "file": "cost-model-template.xlsx",
+          "url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/docs/commercial/lab-02/cost-model-template.xlsx",
+          "matches_verified_local_file": true,
+          "sha256": "09631f943583711fc860261868f907bbcb86013857adce970c27dabef82994bc"
+        },
+        {
+          "platform": "GitHub",
+          "file": "assets/lab-02-banner.png",
+          "url": "https://raw.githubusercontent.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/main/docs/commercial/lab-02/assets/lab-02-banner.png",
+          "matches_verified_local_file": true,
+          "sha256": "4ab0d9a919fe15dbafa162ac67ea678a6fa809a08bce49906f863401d026cf29"
+        },
+        {
+          "platform": "GitHub",
+          "file": "cost-model-template.xlsx",
+          "url": "https://raw.githubusercontent.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/main/docs/commercial/lab-02/cost-model-template.xlsx",
+          "matches_verified_local_file": true,
+          "sha256": "09631f943583711fc860261868f907bbcb86013857adce970c27dabef82994bc"
+        }
+      ],
+      "hosted_coverage": {
+        "line_percent": 100.0,
+        "branch_percent": 100.0
+      },
+      "test_evidence_method": "Parsed JUnit and Cobertura artifacts from successful quality_and_tests job 17448479119"
+    },
+    "destinations": "Existing GitLab canonical project and GitHub mirror; no new repository",
+    "optional_registry_job": "Left manual; no registry publication or deployment"
   },
   "boundaries": [
     "No recruiter/prospect outreach",
@@ -243,5 +344,6 @@
     "No paid-feature execution claim",
     "No controlled cross-platform benchmark",
     "No deployment or optional registry publication"
-  ]
+  ],
+  "final_recorded_at_utc": "2026-10-25T13:30:02+00:00"
 }
