@@ -14,7 +14,11 @@ Scope: a strategy and execution simulation, not a campaign. Baseline: `cba015811
 
 ## Publication checks
 
-The public README/banner, template/model links, visible unsent labels, downloadable-file hashes and hosted pipeline are verified after source publication. Pending checks are not recorded as successful. Final evidence and matching repository snapshots are saved in this record and [HANDOVER.md](HANDOVER.md) after observation.
+Completed on both existing public repositories. Chromium followed the main README navigation and verified the Lab 04 title, 1800 × 640 banner image, four-lab walkthrough, template/model/handover links, all eight individually labelled unsent drafts, fictional scores and funnel/capacity tables. Screenshots were visually reviewed. All 16 public downloads (eight files per platform: PNG/SVG, three CSVs, model inputs/results and calculator) returned HTTP 200 and matched local SHA-256 hashes.
+
+Observed source snapshot: both GitLab and GitHub `main` were `753f4b2da4cafb9bcc002677fef9f1d94bcf112f`. [Pipeline 2986687563](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986687563) succeeded with all seven required jobs, 52 passing tests, 100% line/branch coverage and zero HIGH/CRITICAL image vulnerabilities. Optional `publish_image` remains manual. Full structured rendering, download hashes, job and preservation evidence is retained in [verification.json](verification.json).
+
+The final evidence-only commit follows that measured source snapshot. Its remote heads, clean working tree and new pipeline are checked after publication and reported at completion; this document does not attempt to embed its own commit hash. No content, asset, calculator or earlier-lab change accompanies this evidence closure.
 
 ## Evidence limits
 

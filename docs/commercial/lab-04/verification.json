@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-25T15:04:38+00:00",
+  "checked_at_utc": "2026-10-25T17:55:32.630365+00:00",
   "scope": "Final four-lab independent portfolio; strategy and simulation, not live sales execution",
   "local_checks": {
     "checked_at_utc": "2026-10-25T15:04:39+00:00",
@@ -334,8 +334,351 @@
     "history_findings": 0
   },
   "publication": {
-    "status": "Pending source publication and browser verification; no pending check counted as passed",
-    "destinations": "Existing canonical GitLab project and existing GitHub mirror only"
+    "status": "Verified on both existing repositories",
+    "source_publication_snapshot": {
+      "origin": "753f4b2da4cafb9bcc002677fef9f1d94bcf112f",
+      "github": "753f4b2da4cafb9bcc002677fef9f1d94bcf112f"
+    },
+    "rendering": {
+      "checked_at_utc": "2026-10-25T15:10:54+00:00",
+      "method": "Public Chromium pages: followed root navigation; loaded banner, inspected template links, eight unsent drafts and score/funnel presentation",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "checks": [
+        {
+          "platform": "GitLab",
+          "root_http_status": 200,
+          "main_navigation_href": "/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-04/README.md",
+          "earlier_lab_banner_and_links_present": true,
+          "readme_url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-04/README.md",
+          "title_present": true,
+          "four_lab_walkthrough_present": true,
+          "template_model_handover_links": [
+            "prioritisation-template.csv",
+            "fictional-accounts.csv",
+            "sequence-template.csv",
+            "model-inputs.json",
+            "model-results.json",
+            "calculate_models.py",
+            "HANDOVER.md"
+          ],
+          "banner": {
+            "naturalWidth": 1800,
+            "naturalHeight": 640,
+            "renderedWidth": 765,
+            "renderedHeight": 272,
+            "source": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/docs/commercial/lab-04/assets/lab-04-banner.png"
+          },
+          "content_checks": {
+            "outreach": {
+              "page": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-04/OUTREACH_EXAMPLES.md",
+              "visible_individually_labelled_unsent_messages": 8,
+              "message_ids": [
+                "C1",
+                "C2",
+                "E1",
+                "E2",
+                "F1",
+                "F2",
+                "L1",
+                "L2"
+              ],
+              "http_status": 200
+            },
+            "calculations": {
+              "page": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-04/FUNNEL_MODEL.md",
+              "sensitivity_table_values": [
+                "0.09",
+                "0.6",
+                "1.7496"
+              ],
+              "capacity_calculation_visible": true,
+              "http_status": 200
+            },
+            "fictional_scores": {
+              "page": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-04/ACCOUNT_EXAMPLES.md",
+              "rendered_scores": [
+                "67.50",
+                "57.50",
+                "13.75",
+                "100.00"
+              ],
+              "http_status": 200
+            }
+          },
+          "verified": true
+        },
+        {
+          "platform": "GitHub",
+          "root_http_status": 200,
+          "main_navigation_href": "/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-04/README.md",
+          "earlier_lab_banner_and_links_present": true,
+          "readme_url": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-04/README.md",
+          "title_present": true,
+          "four_lab_walkthrough_present": true,
+          "template_model_handover_links": [
+            "prioritisation-template.csv",
+            "fictional-accounts.csv",
+            "sequence-template.csv",
+            "model-inputs.json",
+            "model-results.json",
+            "calculate_models.py",
+            "HANDOVER.md"
+          ],
+          "banner": {
+            "naturalWidth": 1800,
+            "naturalHeight": 640,
+            "renderedWidth": 1012,
+            "renderedHeight": 360,
+            "source": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/raw/main/docs/commercial/lab-04/assets/lab-04-banner.png"
+          },
+          "content_checks": {
+            "outreach": {
+              "page": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-04/OUTREACH_EXAMPLES.md",
+              "visible_individually_labelled_unsent_messages": 8,
+              "message_ids": [
+                "C1",
+                "C2",
+                "E1",
+                "E2",
+                "F1",
+                "F2",
+                "L1",
+                "L2"
+              ],
+              "http_status": 200
+            },
+            "calculations": {
+              "page": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-04/FUNNEL_MODEL.md",
+              "sensitivity_table_values": [
+                "0.09",
+                "0.6",
+                "1.7496"
+              ],
+              "capacity_calculation_visible": true,
+              "http_status": 200
+            },
+            "fictional_scores": {
+              "page": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-04/ACCOUNT_EXAMPLES.md",
+              "rendered_scores": [
+                "67.50",
+                "57.50",
+                "13.75",
+                "100.00"
+              ],
+              "http_status": 200
+            }
+          },
+          "verified": true
+        }
+      ]
+    },
+    "downloads": {
+      "checked_at_utc": "2026-10-25T17:55:03.815650+00:00",
+      "checks": [
+        {
+          "platform": "GitLab",
+          "path": "assets/lab-04-banner.png",
+          "http_status": 200,
+          "sha256": "2acb1805055491b196f983dd7b57baa0ed46611a4bca220e31c263e771ce87f3",
+          "matches_local": true
+        },
+        {
+          "platform": "GitLab",
+          "path": "assets/lab-04-banner.svg",
+          "http_status": 200,
+          "sha256": "4986ef402e2a81c5f70634e297294a586d3111fcc45f7919b14364b9c30ed966",
+          "matches_local": true
+        },
+        {
+          "platform": "GitLab",
+          "path": "prioritisation-template.csv",
+          "http_status": 200,
+          "sha256": "5f03d3d0169bdf48ec7dd310dfeea3cefbb0e3025fba2f05e4bc777ca259c0d7",
+          "matches_local": true
+        },
+        {
+          "platform": "GitLab",
+          "path": "fictional-accounts.csv",
+          "http_status": 200,
+          "sha256": "0153b180c55da25fea91ef9a186d7550839b97586f18309473e0247c29b6e43f",
+          "matches_local": true
+        },
+        {
+          "platform": "GitLab",
+          "path": "sequence-template.csv",
+          "http_status": 200,
+          "sha256": "3c7b1b8fed99c51cba3539460db50218e64a8e66ca0336ff6b0260b224d8cd65",
+          "matches_local": true
+        },
+        {
+          "platform": "GitLab",
+          "path": "model-inputs.json",
+          "http_status": 200,
+          "sha256": "c9f700037f43e99f6f57e23b61e9556ba171c7b62f707856b498a60e2fc342c6",
+          "matches_local": true
+        },
+        {
+          "platform": "GitLab",
+          "path": "model-results.json",
+          "http_status": 200,
+          "sha256": "63102088f809aff33d095856a9dfce80553833a7b3bfb277af3a6c2a024b497d",
+          "matches_local": true
+        },
+        {
+          "platform": "GitLab",
+          "path": "calculate_models.py",
+          "http_status": 200,
+          "sha256": "482178acd7f8cd46e942d6e132698d27b7b9efaa19be3695a1cc653e0f5e1fe0",
+          "matches_local": true
+        },
+        {
+          "platform": "GitHub",
+          "path": "assets/lab-04-banner.png",
+          "http_status": 200,
+          "sha256": "2acb1805055491b196f983dd7b57baa0ed46611a4bca220e31c263e771ce87f3",
+          "matches_local": true
+        },
+        {
+          "platform": "GitHub",
+          "path": "assets/lab-04-banner.svg",
+          "http_status": 200,
+          "sha256": "4986ef402e2a81c5f70634e297294a586d3111fcc45f7919b14364b9c30ed966",
+          "matches_local": true
+        },
+        {
+          "platform": "GitHub",
+          "path": "prioritisation-template.csv",
+          "http_status": 200,
+          "sha256": "5f03d3d0169bdf48ec7dd310dfeea3cefbb0e3025fba2f05e4bc777ca259c0d7",
+          "matches_local": true
+        },
+        {
+          "platform": "GitHub",
+          "path": "fictional-accounts.csv",
+          "http_status": 200,
+          "sha256": "0153b180c55da25fea91ef9a186d7550839b97586f18309473e0247c29b6e43f",
+          "matches_local": true
+        },
+        {
+          "platform": "GitHub",
+          "path": "sequence-template.csv",
+          "http_status": 200,
+          "sha256": "3c7b1b8fed99c51cba3539460db50218e64a8e66ca0336ff6b0260b224d8cd65",
+          "matches_local": true
+        },
+        {
+          "platform": "GitHub",
+          "path": "model-inputs.json",
+          "http_status": 200,
+          "sha256": "c9f700037f43e99f6f57e23b61e9556ba171c7b62f707856b498a60e2fc342c6",
+          "matches_local": true
+        },
+        {
+          "platform": "GitHub",
+          "path": "model-results.json",
+          "http_status": 200,
+          "sha256": "63102088f809aff33d095856a9dfce80553833a7b3bfb277af3a6c2a024b497d",
+          "matches_local": true
+        },
+        {
+          "platform": "GitHub",
+          "path": "calculate_models.py",
+          "http_status": 200,
+          "sha256": "482178acd7f8cd46e942d6e132698d27b7b9efaa19be3695a1cc653e0f5e1fe0",
+          "matches_local": true
+        }
+      ]
+    },
+    "hosted_pipeline": {
+      "id": 2986687563,
+      "sha": "753f4b2da4cafb9bcc002677fef9f1d94bcf112f",
+      "status": "success",
+      "jobs": [
+        {
+          "id": 17449316048,
+          "name": "publish_image",
+          "status": "manual",
+          "allow_failure": true
+        },
+        {
+          "id": 17449316047,
+          "name": "image_scan",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "id": 17449316046,
+          "name": "container_build",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "id": 17449316045,
+          "name": "package",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "id": 17449316044,
+          "name": "secret_detection",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "id": 17449316043,
+          "name": "dependency_audit",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "id": 17449316042,
+          "name": "static_analysis",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "id": 17449316041,
+          "name": "quality_and_tests",
+          "status": "success",
+          "allow_failure": false
+        }
+      ],
+      "junit": {
+        "name": "pytest tests"
+      },
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "52",
+          "time": "0.215",
+          "timestamp": "2026-10-25T15:08:41.437221+00:00",
+          "hostname": "runner-nezyxejex-project-87904533-concurrent-0"
+        }
+      ],
+      "coverage": {
+        "version": "7.17.0",
+        "timestamp": "1792940921647",
+        "lines-valid": "50",
+        "lines-covered": "50",
+        "line-rate": "1",
+        "branches-valid": "20",
+        "branches-covered": "20",
+        "branch-rate": "1",
+        "complexity": "0"
+      },
+      "image_vulnerability_counts": {
+        "HIGH": 0,
+        "CRITICAL": 0
+      },
+      "web_url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986687563"
+    },
+    "final_record_note": "This evidence-only commit follows the observed matching source snapshot. Its final remote heads and pipeline are checked after pushing; a commit cannot embed its own hash."
   },
   "boundaries": [
     "Every outreach draft and sequence row labelled UNSENT PORTFOLIO EXAMPLE",
