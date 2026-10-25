@@ -6,6 +6,13 @@
 
 A working DevSecOps lab from SkynetAI-Labs: a release-risk API, a fail-closed GitLab pipeline, and an evidence-based commercial case study. GitLab is the canonical CI platform; a GitHub copy is a source mirror, not a second deployment system.
 
+## Portfolio labs
+
+| Lab | Focus | Start here |
+| --- | --- | --- |
+| Lab 01 | Secure CI/CD engineering and recorded technical proof | [Technical verification](docs/VERIFICATION.md) and [commercial case study](docs/CASE_STUDY.md) |
+| Lab 02 | Competitive evaluation and consultative sales discovery | [Hiring-team walkthrough, banner, and evaluation toolkit](docs/commercial/lab-02/README.md) |
+
 ## What the project demonstrates
 
 - A Flask API validates scan summaries and blocks release decisions when tests fail, secrets are detected, or high/critical findings exist.

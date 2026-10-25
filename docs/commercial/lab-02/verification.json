@@ -1,0 +1,247 @@
+{
+  "verified_at_utc": "2026-10-25T13:12:12+00:00",
+  "scope": "Independent portfolio documentation, banner and evaluation templates; no buyer pilot or paid-product evaluation",
+  "local_checks": {
+    "checked_at_utc": "2026-10-25T13:08:50+00:00",
+    "lab_01_baseline_commit": "6a6f51c7c26bb6bd5471a900b71b7e44148d8b67",
+    "local_markdown_files": 9,
+    "local_link_targets_and_anchors_checked": 43,
+    "external_urls": [
+      "https://docs.github.com/en/actions/get-started/understand-github-actions",
+      "https://docs.github.com/en/billing/get-started/how-billing-works",
+      "https://docs.github.com/en/code-security/getting-started/github-security-features",
+      "https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security",
+      "https://docs.gitlab.com/ci/",
+      "https://docs.gitlab.com/user/application_security/",
+      "https://docs.gitlab.com/user/application_security/container_scanning/#features",
+      "https://docs.gitlab.com/user/application_security/dependency_scanning/",
+      "https://docs.gitlab.com/user/application_security/sast/#features",
+      "https://docs.gitlab.com/user/application_security/vulnerability_report/",
+      "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985812654"
+    ],
+    "lab_01_unchanged_files": [
+      {
+        "path": ".dockerignore",
+        "sha256": "0f7e68420ddb6a2528d916143ee8a4e32c712beec83720e8e4e350c6a46a0806"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "fe775bcf7daca2affc5e16783543b02b0bbf46e6fd41e93c102c0a4704c570e0"
+      },
+      {
+        "path": ".gitlab-ci.yml",
+        "sha256": "5ccf30e97f4ea97a8ee8d4b29bf9cf3a64ff6b2ea66f6f52da42af806d35ec78"
+      },
+      {
+        "path": "Dockerfile",
+        "sha256": "044cb3dade5b257052d53ff0cfb0f8fc00448dbbbd4ebf7a7c71c5e027b57dc4"
+      },
+      {
+        "path": "assets/project-banner.png",
+        "sha256": "d3b86329f9c7f53677e99c9c0f4215cf08a37bb838f5a4d0ae6ac933d5e7bab1"
+      },
+      {
+        "path": "assets/project-banner.svg",
+        "sha256": "b45626b49ea8bd4fc0d810cdade41ae934c9f53af221744a7c5eb4efdf49d0d2"
+      },
+      {
+        "path": "docs/CASE_STUDY.md",
+        "sha256": "1cb19de977053a0fae1037689fb78cf600c13e6a422f2e6a64891d1cae123df0"
+      },
+      {
+        "path": "docs/OPERATIONS.md",
+        "sha256": "752193a2d8021cc146af33e7e3bc2724efc58ca664b520cefdd272a8f0339324"
+      },
+      {
+        "path": "docs/SECURITY.md",
+        "sha256": "364d069d02fcf531b6d7d73cb373112eb2479e7e6d23ee5cb047525767375331"
+      },
+      {
+        "path": "docs/VERIFICATION.md",
+        "sha256": "8e4add092f86be0195a6da52575d677d3f52db53cf6ed19918955ebf25849516"
+      },
+      {
+        "path": "docs/evidence/hosted-pipeline.json",
+        "sha256": "64017d33ff8f7ebd194dafca6a508a2729f609bf126a8565ad26eb0526229248"
+      },
+      {
+        "path": "docs/evidence/readme-rendering.json",
+        "sha256": "de29247df6309d535d5290886d87ddf3a1fa496af1d354bce061e02b176cc68f"
+      },
+      {
+        "path": "docs/evidence/verification-summary.json",
+        "sha256": "26aa9f7ce2a05ab666bfe07e03cdb7de1c907ee521ecde0a5abd00010792d90d"
+      },
+      {
+        "path": "docs/original-gitlab-readme.md",
+        "sha256": "aa1061970ef30f73495412dc87f636f69f88250af7ceed9af87a746f712b5c0b"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "037900884ddea17c655e21db12fc5cf827d439988d4d87eb49631a0b16db95ce"
+      },
+      {
+        "path": "requirements-ci.in",
+        "sha256": "6727c21d6c1239ce963f9a656fb35b3f3f812420c2a73e2f9f9c153d00d49f6d"
+      },
+      {
+        "path": "requirements-ci.lock",
+        "sha256": "bbc8b4957970140dae2f69855cf2e0cb96304f9eec058060c2dd0fd78616ea22"
+      },
+      {
+        "path": "requirements.in",
+        "sha256": "783a9e313c459e5999f64009d5999c29c7e313d0e322e2989c105d1f4d7a0ee5"
+      },
+      {
+        "path": "requirements.lock",
+        "sha256": "adbd6a8105d7ec136574418c797574f262d33332677cfbd7648bc4f39a18329e"
+      },
+      {
+        "path": "scripts/smoke.py",
+        "sha256": "b7cbabb10900c8321e59190b34d6ce06b9e3fc50810d479d3619a6eadf10c8c6"
+      },
+      {
+        "path": "scripts/test_controls.py",
+        "sha256": "6570b3d3753117769985d1350dafc8c1ee9974f6be4b8e233b9744a1417fe97c"
+      },
+      {
+        "path": "scripts/verify.sh",
+        "sha256": "bcd6246e95b37c3f7080bf49bf4d82ebad3aaf87ac3d4631c2b16a1b4d723bc9"
+      },
+      {
+        "path": "src/release_gate/__init__.py",
+        "sha256": "28154e2f585e3ef42f02580248b9da413b8fb1028ef288ee0d072cd50b000b88"
+      },
+      {
+        "path": "tests/test_api.py",
+        "sha256": "08b2021b52bcadf1216534e3639d9eacfa2eaab2c613379e19068e15a79479f9"
+      }
+    ],
+    "main_readme_change": "navigation added only",
+    "handover_change": "original content preserved; continuation may be appended",
+    "errors": []
+  },
+  "external_link_checks": {
+    "checked_at_utc": "2026-10-25T13:09:41+00:00",
+    "checks": [
+      {
+        "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+        "status": 200,
+        "resolved_url": "https://docs.github.com/en/actions/get-started/understand-github-actions"
+      },
+      {
+        "url": "https://docs.github.com/en/billing/get-started/how-billing-works",
+        "status": 200,
+        "resolved_url": "https://docs.github.com/en/billing/get-started/how-billing-works"
+      },
+      {
+        "url": "https://docs.github.com/en/code-security/getting-started/github-security-features",
+        "status": 200,
+        "resolved_url": "https://docs.github.com/en/code-security/getting-started/github-security-features"
+      },
+      {
+        "url": "https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security",
+        "status": 200,
+        "resolved_url": "https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security"
+      },
+      {
+        "url": "https://docs.gitlab.com/ci/",
+        "status": 200,
+        "resolved_url": "https://docs.gitlab.com/ci/"
+      },
+      {
+        "url": "https://docs.gitlab.com/user/application_security/",
+        "status": 200,
+        "resolved_url": "https://docs.gitlab.com/user/application_security/"
+      },
+      {
+        "url": "https://docs.gitlab.com/user/application_security/container_scanning/#features",
+        "status": 200,
+        "resolved_url": "https://docs.gitlab.com/user/application_security/container_scanning/"
+      },
+      {
+        "url": "https://docs.gitlab.com/user/application_security/dependency_scanning/",
+        "status": 200,
+        "resolved_url": "https://docs.gitlab.com/user/application_security/dependency_scanning/"
+      },
+      {
+        "url": "https://docs.gitlab.com/user/application_security/sast/#features",
+        "status": 200,
+        "resolved_url": "https://docs.gitlab.com/user/application_security/sast/"
+      },
+      {
+        "url": "https://docs.gitlab.com/user/application_security/vulnerability_report/",
+        "status": 200,
+        "resolved_url": "https://docs.gitlab.com/user/application_security/vulnerability_report/"
+      },
+      {
+        "url": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+        "status": 200,
+        "resolved_url": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline"
+      },
+      {
+        "url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+        "status": 200,
+        "resolved_url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline"
+      },
+      {
+        "url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985812654",
+        "status": 200,
+        "resolved_url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985812654"
+      }
+    ]
+  },
+  "workbook": {
+    "sheets": [
+      "Guide",
+      "Low",
+      "Base",
+      "High",
+      "Illustration"
+    ],
+    "blank_scenarios": "Low/Base/High required inputs blank; cached outputs Incomplete",
+    "blank_csv_input_rows": 45,
+    "formula_checks": "COUNT/MIN/integer-horizon safeguards; visible formulas and cross-option dependencies inspected",
+    "illustration_arithmetic": "Independently recomputed from shipped input cells",
+    "illustration_economic_tco_gbp": [
+      14100,
+      11800,
+      12810
+    ],
+    "illustration_cash_outlay_gbp": [
+      2400,
+      3100,
+      2310
+    ],
+    "macros": false,
+    "external_data_relationships": false,
+    "live_excel_or_libreoffice_recalculation": "Not performed; buyer should recalculate before operational use"
+  },
+  "banner": {
+    "title": "GitLab Lab 02 \u2014 Competitive Evaluation & Sales Discovery",
+    "label": "Independent Portfolio Project",
+    "authoring": "Extended the existing code-native SVG style; Lab 01 assets unchanged",
+    "natural_width": 1800,
+    "natural_height": 640,
+    "png_sha256": "4ab0d9a919fe15dbafa162ac67ea678a6fa809a08bce49906f863401d026cf29"
+  },
+  "secret_scanning": {
+    "tool": "Gitleaks v8.30.1, same pinned version as Lab 01",
+    "tree_findings": 0,
+    "history_findings": 0,
+    "redaction": true
+  },
+  "publication": {
+    "destinations": "Existing GitLab project and approved GitHub mirror only",
+    "status": "Awaiting source publication and browser checks; not counted as completed yet"
+  },
+  "boundaries": [
+    "No recruiter/prospect outreach",
+    "No named hiring contact",
+    "No paid-feature execution claim",
+    "No controlled cross-platform benchmark",
+    "No deployment or optional registry publication"
+  ]
+}

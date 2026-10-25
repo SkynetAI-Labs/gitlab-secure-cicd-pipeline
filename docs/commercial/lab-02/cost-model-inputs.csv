@@ -1,0 +1,46 @@
+scenario,input,unit,current_baseline,retain_github,evaluate_gitlab,evidence_owner,evidence_status,source_or_note
+Low,horizon_months,months,,,,,Unknown,Planning horizon; default 12 months in workbook
+Low,loaded_hourly_rate,GBP/hour,,,,,Unknown,Finance-approved cost rate
+Low,releases_per_month,releases/month,,,,,Unknown,Matched measured workload
+Low,plan_licences,GBP/month,,,,,Unknown,Written quote / existing contract
+Low,incremental_security_subscriptions,GBP/month,,,,,Unknown,Quote; exclude bundled features already counted
+Low,runner_compute,GBP/month,,,,,Unknown,Usage at matched workload
+Low,artifacts_storage,GBP/month,,,,,Unknown,Usage at matched retention
+Low,integrations_support,GBP/month,,,,,Unknown,Support and integration ownership costs
+Low,pipeline_ownership,hours/month,,,,,Unknown,Measured non-overlapping effort
+Low,security_triage,hours/month,,,,,Unknown,Measured non-overlapping effort
+Low,manual_review,minutes/release,,,,,Unknown,Measured operator effort
+Low,migration,one-time hours,,,,,Unknown,In-house estimate
+Low,training,one-time hours,,,,,Unknown,In-house estimate
+Low,other_one_time,GBP,,,,,Unknown,External fees; do not duplicate in-house labour
+Low,overlap_commitments,GBP over horizon,,,,,Unknown,Incremental unretireable/parallel costs not in monthly rows
+Base,horizon_months,months,,,,,Unknown,Planning horizon; default 12 months in workbook
+Base,loaded_hourly_rate,GBP/hour,,,,,Unknown,Finance-approved cost rate
+Base,releases_per_month,releases/month,,,,,Unknown,Matched measured workload
+Base,plan_licences,GBP/month,,,,,Unknown,Written quote / existing contract
+Base,incremental_security_subscriptions,GBP/month,,,,,Unknown,Quote; exclude bundled features already counted
+Base,runner_compute,GBP/month,,,,,Unknown,Usage at matched workload
+Base,artifacts_storage,GBP/month,,,,,Unknown,Usage at matched retention
+Base,integrations_support,GBP/month,,,,,Unknown,Support and integration ownership costs
+Base,pipeline_ownership,hours/month,,,,,Unknown,Measured non-overlapping effort
+Base,security_triage,hours/month,,,,,Unknown,Measured non-overlapping effort
+Base,manual_review,minutes/release,,,,,Unknown,Measured operator effort
+Base,migration,one-time hours,,,,,Unknown,In-house estimate
+Base,training,one-time hours,,,,,Unknown,In-house estimate
+Base,other_one_time,GBP,,,,,Unknown,External fees; do not duplicate in-house labour
+Base,overlap_commitments,GBP over horizon,,,,,Unknown,Incremental unretireable/parallel costs not in monthly rows
+High,horizon_months,months,,,,,Unknown,Planning horizon; default 12 months in workbook
+High,loaded_hourly_rate,GBP/hour,,,,,Unknown,Finance-approved cost rate
+High,releases_per_month,releases/month,,,,,Unknown,Matched measured workload
+High,plan_licences,GBP/month,,,,,Unknown,Written quote / existing contract
+High,incremental_security_subscriptions,GBP/month,,,,,Unknown,Quote; exclude bundled features already counted
+High,runner_compute,GBP/month,,,,,Unknown,Usage at matched workload
+High,artifacts_storage,GBP/month,,,,,Unknown,Usage at matched retention
+High,integrations_support,GBP/month,,,,,Unknown,Support and integration ownership costs
+High,pipeline_ownership,hours/month,,,,,Unknown,Measured non-overlapping effort
+High,security_triage,hours/month,,,,,Unknown,Measured non-overlapping effort
+High,manual_review,minutes/release,,,,,Unknown,Measured operator effort
+High,migration,one-time hours,,,,,Unknown,In-house estimate
+High,training,one-time hours,,,,,Unknown,In-house estimate
+High,other_one_time,GBP,,,,,Unknown,External fees; do not duplicate in-house labour
+High,overlap_commitments,GBP over horizon,,,,,Unknown,Incremental unretireable/parallel costs not in monthly rows
