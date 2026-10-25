@@ -83,5 +83,18 @@
       "path": ".dockerignore",
       "sha256": "0f7e68420ddb6a2528d916143ee8a4e32c712beec83720e8e4e350c6a46a0806"
     }
-  ]
+  ],
+  "final_artifact_verification_at_utc": "2026-10-25T03:41:43+00:00",
+  "verified_container_image_id": "sha256:6cc80a47d91cec61b10c8969ec597a0aa7de056a36cc62e718805b4607db574b",
+  "build_artifacts": [
+    {
+      "path": "dist/secure_release_gate-0.1.0-py3-none-any.whl",
+      "sha256": "58ef9ee97a641a667ef3bd12e00f00afeb879ed28542347dcd7257edce76625e"
+    },
+    {
+      "path": "dist/secure_release_gate-0.1.0.tar.gz",
+      "sha256": "31f4e403d55b0c8ce94d7a6a4c6ebf24e472c42170f63d5b92de4ae91c7f3285"
+    }
+  ],
+  "readme_rendering_evidence": "docs/evidence/readme-rendering.json"
 }

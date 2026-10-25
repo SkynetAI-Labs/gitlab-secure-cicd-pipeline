@@ -30,4 +30,11 @@ Run `sh scripts/verify.sh` in a Python 3.14 environment installed from `requirem
 
 ## Publication verification
 
-Publication URLs, exact source commits, hosted pipeline status, and cross-platform banner rendering are recorded after publication. The owner approved the separate public GitHub mirror `SkynetAI-Labs/gitlab-secure-cicd-pipeline`. GitHub confirmed HTTP 404 before creation; the new repository was checked as empty and writable before publishing. Lab 03 remains separate.
+The verified implementation was published at commit `7e036848013fd5192ad25f6996b2638443ee6b9f`. Subsequent commits document publication and verification; the tested implementation is identified by the source-file hashes in the evidence summary.
+
+- [GitLab canonical project](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline).
+- [Separate GitHub mirror](https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline). HTTP 404 was confirmed before creating this public repository; it was checked as empty and writable before the first push. Lab 03 was not changed.
+- Both public README pages returned HTTP 200 in Chromium. Their relative-path banner loaded at its expected natural dimensions of 1800 × 640 pixels, rendered at 763 × 271 on GitLab and 838 × 298 on GitHub in the verification viewport. The banner uses the exact requested title and the label “Independent Portfolio Project”. See [rendering evidence](evidence/readme-rendering.json). Cropped browser screenshots are retained locally under ignored `reports/`.
+- [GitLab pipeline 2985772695](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985772695) failed before creating jobs; static CI lint reports no YAML errors. A fresh pipeline simulation returned `Identity verification is required in order to run CI jobs`. This is an account-level blocker, so no hosted job success is claimed.
+
+The owner must complete **Verify my account** in GitLab's alert banner and then start a new `main` pipeline. Follow only the identity checks requested in GitLab itself. See [operations](OPERATIONS.md#current-hosted-ci-blocker-account-identity-verification) and [GitLab's official instructions](https://docs.gitlab.com/ci/debugging/#error-identity-verification-is-required-in-order-to-run-ci-jobs). Runner-specific behavior can only be verified after that blocker clears. No registry image was pushed and no production deployment was performed.

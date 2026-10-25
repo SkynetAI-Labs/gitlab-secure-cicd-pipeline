@@ -1,0 +1,31 @@
+{
+  "verified_at_utc": "2026-10-25T03:41:25+00:00",
+  "method": "Public repository pages rendered in headless Chromium; banner scrolled into view, image completion and natural dimensions checked; cropped screenshots retained locally in reports/.",
+  "banner_title": "GitLab Secure CI/CD Pipeline Engineering",
+  "banner_label": "Independent Portfolio Project",
+  "banner_sha256": "d3b86329f9c7f53677e99c9c0f4215cf08a37bb838f5a4d0ae6ac933d5e7bab1",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "gitlab": {
+    "page": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+    "http_status": 200,
+    "naturalWidth": 1800,
+    "naturalHeight": 640,
+    "renderedWidth": 763,
+    "renderedHeight": 271,
+    "source": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/assets/project-banner.png",
+    "verified": true
+  },
+  "github": {
+    "page": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+    "http_status": 200,
+    "naturalWidth": 1800,
+    "naturalHeight": 640,
+    "renderedWidth": 838,
+    "renderedHeight": 298,
+    "source": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/raw/main/assets/project-banner.png",
+    "verified": true
+  }
+}
