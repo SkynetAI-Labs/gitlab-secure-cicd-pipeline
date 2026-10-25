@@ -1,0 +1,10 @@
+role_id,role_hypothesis,person_name,outcome_hypothesis,approval_authority,influence,stance,relationship_access,evidence_type,scenario_reference,evidence_source_date,confidence,next_proposed_action,agreed_owner,agreed_date
+R1,Economic authority / sponsor,,,Unconfirmed,Unconfirmed,Unknown,Unconfirmed,Hypothesis,H1;H7,,Unvalidated,Validate actual purchase authority and sponsorship,,
+R2,Finance / budget owner,,,Unconfirmed,Unconfirmed,Unknown,Unconfirmed,Hypothesis,H5,,Unvalidated,Validate funding source and release approval,,
+R3,Platform leadership,,,Unconfirmed,Unconfirmed,Unknown,Unconfirmed,Hypothesis,H3,,Unvalidated,"Validate remit, influence and agreed stakeholder access",,
+R4,Architecture / enterprise IT,,,Unconfirmed,Unconfirmed,Unknown,Unconfirmed,Hypothesis,H4,,Unvalidated,Validate constraints and required reviewers,,
+R5,AppSec / risk,,,Unconfirmed,Unconfirmed,Unknown,Unconfirmed,Hypothesis,H4,,Unvalidated,Validate acceptance and exception authority,,
+R6,Legal / privacy,,,Unconfirmed,Unconfirmed,Unknown,Unconfirmed,Hypothesis,H6,,Unvalidated,Validate required review and signer route,,
+R7,Procurement / vendor management,,,Unconfirmed,Unconfirmed,Unknown,Unconfirmed,Hypothesis,H6,,Unvalidated,"Validate onboarding, purchasing route and PO dependencies",,
+R8,Service teams / adoption,,,Unconfirmed,Unconfirmed,Unknown,Unconfirmed,Hypothesis,H8,,Unvalidated,Validate maintainer criteria and adoption owner,,
+R9,Partner if relevant,,,Unconfirmed,Unconfirmed,Unknown,Unconfirmed,Hypothesis,H8,,Unvalidated,First establish whether any partner is involved,,

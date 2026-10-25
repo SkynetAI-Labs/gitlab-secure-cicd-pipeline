@@ -1,0 +1,9 @@
+gate_id,action_proposal,buyer_role_hypotheses,seller_role_proposal,dependencies,required_evidence,named_owner,agreed_date,status,evidence_type,scenario_reference
+G1,Validate problem and priority,R1;R3;R8,Account executive,,Buyer-confirmed problem and sponsor,,,Proposed; not agreed,Proposed action,H1
+G2,"Agree criteria, authority and decision path",R1;R2;R3;R4;R5;R6;R7;R8,Account executive,G1,"Buyer-accepted roles, criteria and decision method",,,Proposed; not agreed,Proposed action,H7
+G3,Scope and evaluate technical fit,R3;R4;R5;R8,Solutions architect,G2,Results accepted against agreed Lab 02 criteria,,,Proposed; not agreed,Proposed action,H3;H4
+G4,Identify and complete required assurance reviews,R4;R5;R6,Solutions architect / authorised specialists,G2,Review evidence and owned remaining conditions,,,Proposed; not agreed,Proposed action,H4;H6
+G5,Validate economic approval and funding,R1;R2,Account executive,G3;G4,Authorised business-case and funding approval,,,Proposed; not agreed,Proposed action,H5;H7
+G6,Establish and complete paper-process requirements,R6;R7;R9,Account executive / partner if relevant,G2,"Buyer-confirmed documents, route, signer and purchasing dependencies",,,Proposed; not agreed,Proposed action,H6;H8
+G7,Confirm authorised purchase,R1;R2;R6;R7,Account executive,G5;G6,Required approvals and approved purchasing evidence,,,Proposed; not agreed,Proposed action,H5;H6;H7
+G8,Agree success and adoption handoff,R3;R8,Customer-success counterpart if engaged,G7,Buyer-approved responsibilities and success scope; no deployment in this lab,,,Proposed; not agreed,Proposed action,H8

@@ -1,0 +1,21 @@
+# Buyer-persona hypotheses
+
+All nine profiles are **hypotheses**, not researched individuals or validated buyer personas. They apply to the [fictional scenario](SCENARIO.md). Actual titles, authority and priorities must be established with the buyer. One person may hold several roles; a committee may share approval authority.
+
+| ID / role hypothesis | Possible priority and pressure | Possible concern | Evidence needed before treating the role as validated |
+| --- | --- | --- | --- |
+| R1 · Economic decision authority / executive sponsor | A business outcome worth prioritising over other initiatives; executive accountability | Change effort outweighs benefit; the initiative does not merit funding | Confirm who can authorise this purchase, delegated limits, sponsorship and any committee approvals. A CTO title alone proves none of these. |
+| R2 · Budget owner / finance / FP&A | A complete, defensible cost and funding view | Capacity value presented as cash savings; costs that cannot be retired; unbudgeted commitments | Confirm funding source and release authority. Have finance validate the existing [Lab 02 model](../lab-02/COST_MODEL.md), rather than assume a positive result. |
+| R3 · Platform / engineering leadership | Consistent delivery evidence with manageable operating effort | Migration disruption, additional ownership, duplicated tooling | Validate multi-team remit, resource authority and internal influence. H3's enthusiasm establishes neither a champion nor a technical approval. |
+| R4 · Architecture / enterprise IT | Fit with the actual infrastructure, identity and integration requirements | A design incompatible with mandatory constraints or unsupported responsibilities | Obtain buyer-owned requirements, required reviewers and an authorised evaluation scope; infer no product suitability from the demo. |
+| R5 · AppSec / security / risk | Controls, evidence quality and accountable exception handling | Findings without workflow ownership; unsupported assurances; unaccepted residual risk | Confirm the acceptance policy, reviewer, risk owner and exception process. A scanner pass does not establish institutional approval. |
+| R6 · Legal / privacy review | Acceptable contractual and data-handling terms within the buyer's process | Undefined obligations, incomplete reviews, unclear signing authority | Identify required reviewers and documents, unresolved issues and authorised signer. No legal assessment or mandatory approval sequence is supplied here. |
+| R7 · Procurement / vendor management | A permitted purchasing route and complete supplier record | Late onboarding, missing purchase-order dependencies or an unapproved route | Confirm supplier onboarding, purchasing controls, owners, lead times and any reseller route. Procurement is not automatically the economic buyer. |
+| R8 · Developers / service owners / adoption lead | A usable workflow, clear support and sustainable ownership | Training burden, loss of effective existing practices, a decision imposed without adoption support | Obtain maintainer acceptance criteria and an adoption owner. A positive demonstration does not prove future usage or value. |
+| R9 · Partner / reseller / implementation adviser, if relevant | Clear responsibilities and a viable contracting/delivery route | Conflicting ownership, duplicate services, misaligned expectations | First establish whether a partner is actually involved; then validate its role and dependencies. Do not mark this role present or absent without evidence. |
+
+## Authority and influence are different dimensions
+
+R1 may sponsor but not personally sign. R2 may own a budget but need another person's release approval. R3 may guide technical selection without being able to fund it. R6/R7 may control required steps without sponsoring the business case. These are possibilities to validate, not universal rules.
+
+The [public MEDDPPICC handbook](https://handbook.gitlab.com/handbook/sales/meddppicc/) supplies qualification vocabulary. The role hypotheses, potential pressures and evidence requirements above are this portfolio's analysis. Use the [stakeholder map](BUYING_COMMITTEE.md) to record what is known, and link back to [Lab 02's discovery cards](../lab-02/DISCOVERY.md) when gathering it; no replacement question deck is introduced.
