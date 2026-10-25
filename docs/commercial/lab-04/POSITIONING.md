@@ -1,0 +1,16 @@
+# Buyer-specific positioning and value hypotheses
+
+The buyer roles are reused from [Lab 03](../lab-03/ENTERPRISE_BUYERS.md); no second buyer map is introduced. The account contexts are [fictional](ACCOUNT_EXAMPLES.md). Every benefit below is a hypothesis to validate, not an achieved result or a vendor guarantee. The [source register](SOURCE_REGISTER.md) records review dates and claim limits.
+
+| Buyer / example | Researched fact or real portfolio evidence | Proposed value hypothesis and proof needed | Boundary |
+| --- | --- | --- | --- |
+| Platform leadership R3 / A01 | GitLab documents CI configuration with stages/jobs and runner execution. [S1](https://docs.gitlab.com/ci/) Lab 01 has a recorded configured pipeline. | A repeatable evidence path might reduce a specific review/retrieval burden; measure against the existing [Lab 02 scorecard](../lab-02/PILOT_SCORECARD.md). | Syntax and a demo are not buyer-specific productivity proof; migration/ownership costs may outweigh benefit. |
+| AppSec R5 / B01 | SAST scanner/report access differs from advanced analysis and richer management/MR features. [S2](https://docs.gitlab.com/user/application_security/sast/#features) The consolidated vulnerability report identifies Ultimate. [S3](https://docs.gitlab.com/user/application_security/vulnerability_report/) | The required findings/evidence workflow may improve accountability if it fits the actual process; validate capability, entitlement, configuration and reviewer acceptance. | No paid feature was trialled. External Bandit/Gitleaks/pip-audit/Trivy artifacts do not prove a native vulnerability-management integration. |
+| Executive/economic role R1 / A01 | GitLab's public handbook describes account/deal-team coordination. [S4](https://handbook.gitlab.com/handbook/sales/playbook/) | An agreed outcome and ownership plan may justify further evaluation if a material problem is confirmed. | Executive sponsorship, budget and buying authority remain unknown; no revenue or risk-reduction result is claimed. |
+| Finance/budget role R2 / A01 or B01 | The public metrics guidance connects technical measures with business outcomes. [S6](https://handbook.gitlab.com/handbook/sales/command-of-the-message/metrics/) | Compare complete quotes, operating effort and actual retireable commitments using the existing [Lab 02 model](../lab-02/COST_MODEL.md). | Capacity value is not automatically cash savings; no blanket cheaper-platform conclusion, price, discount or ROI promise. |
+
+## Positioning approach
+
+Lead with the specific outcome to test, make the evidence boundary clear, and propose a modest next step. Reuse [Lab 02's fair comparison](../lab-02/COMPARISON.md) if the buyer wants alternatives and [Lab 03's decision journey](../lab-03/BUYING_PROCESS.md) if an evaluation becomes justified. Retaining GitHub or deferring a decision remains valid.
+
+No claim is made about regulatory certification, guaranteed vulnerability detection, data residency, private-network fit, roadmap delivery or paid entitlements beyond the selected documentary checks. Each would require separate, current validation for the actual customer configuration. The [unsent examples](OUTREACH_EXAMPLES.md) deliberately avoid unsupported product promises and observed-account personalisation.

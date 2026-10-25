@@ -1,0 +1,80 @@
+{
+  "evidence_type": "All numeric inputs are illustrative assumptions, not vendor benchmarks or campaign observations",
+  "prioritisation": {
+    "rating_max": 4,
+    "criteria": [
+      {
+        "id": "C1",
+        "label": "Relevant delivery/evidence problem",
+        "weight": 30
+      },
+      {
+        "id": "C2",
+        "label": "Delivery coordination complexity",
+        "weight": 20
+      },
+      {
+        "id": "C3",
+        "label": "Control/evidence requirements",
+        "weight": 20
+      },
+      {
+        "id": "C4",
+        "label": "Readiness to consider change",
+        "weight": 15
+      },
+      {
+        "id": "C5",
+        "label": "Viable evaluation/commercial path",
+        "weight": 15
+      }
+    ]
+  },
+  "funnel": {
+    "horizon_days": 90,
+    "screened_accounts": 100,
+    "research_fit_rate": "0.60",
+    "eligibility_rate": "0.50",
+    "scenarios": [
+      {
+        "id": "Low",
+        "rates": {
+          "reply": "0.10",
+          "positive": "0.25",
+          "accepted": "0.40",
+          "held": "0.75",
+          "qualified": "0.40"
+        }
+      },
+      {
+        "id": "Base",
+        "rates": {
+          "reply": "0.20",
+          "positive": "0.50",
+          "accepted": "0.50",
+          "held": "0.80",
+          "qualified": "0.50"
+        }
+      },
+      {
+        "id": "High",
+        "rates": {
+          "reply": "0.30",
+          "positive": "0.60",
+          "accepted": "0.60",
+          "held": "0.90",
+          "qualified": "0.60"
+        }
+      }
+    ]
+  },
+  "capacity": {
+    "research_minutes_per_account": "15",
+    "draft_minutes_per_eligible_account": "10",
+    "max_actions_per_account": 5,
+    "minutes_per_action": "5",
+    "qa_learning_admin_hours": "20",
+    "conversation_preparation_reserve_hours": "10",
+    "available_hours": "80"
+  }
+}

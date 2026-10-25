@@ -1,0 +1,6 @@
+relative_business_day,message_id,fictional_account,role_reference,channel_example,status,actual_recipient,send_date,execution_result,stop_rule
+1,E1,A01,R3,Email,UNSENT PORTFOLIO EXAMPLE,,,Not executed,"Stop on decline, mismatch, ownership conflict or missing channel approval; do not bypass preferences"
+4,L1,A01,R3,LinkedIn note,UNSENT PORTFOLIO EXAMPLE,,,Not executed,"Stop on decline, mismatch, ownership conflict or missing channel approval; do not bypass preferences"
+8,C1,A01,R3,Call opener,UNSENT PORTFOLIO EXAMPLE,,,Not executed,"Stop on decline, mismatch, ownership conflict or missing channel approval; do not bypass preferences"
+13,F1,A01,R3,Email clarification,UNSENT PORTFOLIO EXAMPLE,,,Not executed,"Stop on decline, mismatch, ownership conflict or missing channel approval; do not bypass preferences"
+18,F2,A01,R3,Close-the-loop email,UNSENT PORTFOLIO EXAMPLE,,,Not executed,"Stop on decline, mismatch, ownership conflict or missing channel approval; do not bypass preferences"

@@ -1,0 +1,156 @@
+{
+  "evidence_type": "Fictional inputs and mathematical expectations, not campaign results",
+  "execution_status": "Not executed; no real accounts contacted or messages sent",
+  "fictional_account_scores": [
+    {
+      "account_alias": "A01",
+      "evidence_class": "Fictional account; invented inputs",
+      "score_status": "Complete",
+      "score_out_of_100": "67.50",
+      "gates": {
+        "problem_confirmed": "Unknown",
+        "mandatory_fit": "Unknown",
+        "outreach_approval": "Unknown"
+      },
+      "disposition": "Research/clarification only",
+      "contact_authorised": false
+    },
+    {
+      "account_alias": "B01",
+      "evidence_class": "Fictional account; invented inputs",
+      "score_status": "Complete",
+      "score_out_of_100": "57.50",
+      "gates": {
+        "problem_confirmed": "Unknown",
+        "mandatory_fit": "Unknown",
+        "outreach_approval": "Unknown"
+      },
+      "disposition": "Research/clarification only",
+      "contact_authorised": false
+    },
+    {
+      "account_alias": "C01",
+      "evidence_class": "Fictional account; invented inputs",
+      "score_status": "Complete",
+      "score_out_of_100": "13.75",
+      "gates": {
+        "problem_confirmed": "No",
+        "mandatory_fit": "Unknown",
+        "outreach_approval": "Unknown"
+      },
+      "disposition": "Defer",
+      "contact_authorised": false
+    },
+    {
+      "account_alias": "D01",
+      "evidence_class": "Fictional account; invented inputs",
+      "score_status": "Complete",
+      "score_out_of_100": "100.00",
+      "gates": {
+        "problem_confirmed": "Yes",
+        "mandatory_fit": "No",
+        "outreach_approval": "Unknown"
+      },
+      "disposition": "Exclude",
+      "contact_authorised": false
+    }
+  ],
+  "blank_template_scores": [
+    {
+      "account_alias": "Candidate01",
+      "evidence_class": "Blank template; not reviewed",
+      "score_status": "Incomplete",
+      "score_out_of_100": null,
+      "gates": {
+        "problem_confirmed": "Unknown",
+        "mandatory_fit": "Unknown",
+        "outreach_approval": "Unknown"
+      },
+      "disposition": "Research/clarification only",
+      "contact_authorised": false
+    },
+    {
+      "account_alias": "Candidate02",
+      "evidence_class": "Blank template; not reviewed",
+      "score_status": "Incomplete",
+      "score_out_of_100": null,
+      "gates": {
+        "problem_confirmed": "Unknown",
+        "mandatory_fit": "Unknown",
+        "outreach_approval": "Unknown"
+      },
+      "disposition": "Research/clarification only",
+      "contact_authorised": false
+    },
+    {
+      "account_alias": "Candidate03",
+      "evidence_class": "Blank template; not reviewed",
+      "score_status": "Incomplete",
+      "score_out_of_100": null,
+      "gates": {
+        "problem_confirmed": "Unknown",
+        "mandatory_fit": "Unknown",
+        "outreach_approval": "Unknown"
+      },
+      "disposition": "Research/clarification only",
+      "contact_authorised": false
+    }
+  ],
+  "funnel_and_capacity": {
+    "horizon_days": 90,
+    "unit": "Hypothetical account-level expectations; fractions are not achieved meetings",
+    "scenarios": [
+      {
+        "scenario": "Low",
+        "expected_accounts": {
+          "screened": "100",
+          "research_fit": "60",
+          "hypothetically_eligible": "30",
+          "reply": "3",
+          "positive": "0.75",
+          "accepted": "0.3",
+          "held": "0.225",
+          "qualified": "0.09"
+        }
+      },
+      {
+        "scenario": "Base",
+        "expected_accounts": {
+          "screened": "100",
+          "research_fit": "60",
+          "hypothetically_eligible": "30",
+          "reply": "6",
+          "positive": "3",
+          "accepted": "1.5",
+          "held": "1.2",
+          "qualified": "0.6"
+        }
+      },
+      {
+        "scenario": "High",
+        "expected_accounts": {
+          "screened": "100",
+          "research_fit": "60",
+          "hypothetically_eligible": "30",
+          "reply": "9",
+          "positive": "5.4",
+          "accepted": "3.24",
+          "held": "2.916",
+          "qualified": "1.7496"
+        }
+      }
+    ],
+    "capacity": {
+      "research_hours": "25",
+      "drafting_hours": "5",
+      "maximum_action_hours": "12.5",
+      "qa_learning_admin_hours": "20",
+      "conversation_preparation_reserve_hours": "10",
+      "maximum_hypothetical_actions": "150",
+      "total_hours": "72.5",
+      "available_hours": "80",
+      "headroom_hours": "7.5",
+      "within_assumed_capacity": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+account_alias,evidence_class,C1,C2,C3,C4,C5,problem_confirmed,mandatory_fit,outreach_approval,source_reference,source_date,actual_owner
+A01,Fictional account; invented inputs,3,3,3,2,2,Unknown,Unknown,Unknown,ACCOUNT_EXAMPLES.md,,
+B01,Fictional account; invented inputs,2,3,4,1,1,Unknown,Unknown,Unknown,ACCOUNT_EXAMPLES.md,,
+C01,Fictional account; invented inputs,0,1,1,0,1,No,Unknown,Unknown,ACCOUNT_EXAMPLES.md,,
+D01,Fictional account; invented inputs,4,4,4,4,4,Yes,No,Unknown,ACCOUNT_EXAMPLES.md,,
