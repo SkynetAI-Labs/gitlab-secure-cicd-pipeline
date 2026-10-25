@@ -22,6 +22,12 @@ Scope: the Lab 02 presentation and evaluation toolkit. Lab 01's source, CI, lock
 
 The machine-readable record includes browser results, source-link status, download hashes, preserved-file hashes, workbook checks, and hosted evidence. Subsequent verification-record-only commits do not change Lab 01's implementation. Final publication also confirms both remote `main` branches match and the checkout is clean.
 
+## Final evidence-record closure
+
+[Pipeline 2986559952](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986559952) passed for the completed verification-record commit `970c222f6471df18c96c5d975916e4801ba22c4e`. All seven required jobs succeeded; the optional `publish_image` job remained manual. At the closure review, GitLab and GitHub `main` both matched that commit and the checkout was clean. The exact pipeline and job states are retained under `verification_record_closure` in [verification.json](verification.json).
+
+This closes the previously reported final-record pipeline without replacing the earlier publication, rendering, download, workbook, and preservation evidence. Later documentation-only commits can create newer pipelines; the linked result is a dated historical verification, not a claim about every future commit. No paid-feature trial, outreach, registry publication, or deployment was added.
+
 ## Remaining evaluation gaps
 
 No buyer discovery, procurement quote, paid GitLab/GitHub security-product trial, controlled cross-platform benchmark, or customer pilot was conducted. Scorecard thresholds are proposals. Workbook formulas and example caches were inspected and arithmetic checked independently; live recalculation in Microsoft Excel or LibreOffice was not performed. A buyer should review and recalculate the workbook in their chosen spreadsheet application before use.
