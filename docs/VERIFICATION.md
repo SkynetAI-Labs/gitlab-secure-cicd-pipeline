@@ -30,4 +30,4 @@ Run `sh scripts/verify.sh` in a Python 3.14 environment installed from `requirem
 
 ## Publication verification
 
-Publication URLs, exact source commits, hosted pipeline status, and cross-platform banner rendering are recorded after publication. The GitHub destination is awaiting the owner's choice; do not substitute an unrelated existing project.
+Publication URLs, exact source commits, hosted pipeline status, and cross-platform banner rendering are recorded after publication. The owner approved the separate public GitHub mirror `SkynetAI-Labs/gitlab-secure-cicd-pipeline`. GitHub confirmed HTTP 404 before creation; the new repository was checked as empty and writable before publishing. Lab 03 remains separate.

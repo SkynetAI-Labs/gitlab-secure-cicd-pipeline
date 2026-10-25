@@ -37,3 +37,5 @@ Verified: 2026-10-25T03:13:39+00:00
 ## Engineering continuation — 25 October 2026
 
 The earlier stop point above is preserved setup history. The owner subsequently authorised implementation, security verification, a commercial case study, and source publication. The project now contains a tested release-risk API, staged GitLab CI, dependency locks, a hardened container, branded banner, and security/operations/commercial documentation. See `docs/VERIFICATION.md` for measured results and current publication status. Hosted CI remains subject to GitLab account identity verification. No production deployment is configured or performed.
+
+The owner explicitly selected the separate public GitHub mirror `SkynetAI-Labs/gitlab-secure-cicd-pipeline` and authorised creation if absent. The destination was confirmed absent, created publicly, and checked as empty with push/admin permission. Lab 03 was not changed. The hosted-CI identity-verification instructions are in `docs/OPERATIONS.md`.

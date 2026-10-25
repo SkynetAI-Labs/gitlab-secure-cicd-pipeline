@@ -28,3 +28,9 @@ Registry publishing requires the existing project's registry, a protected defaul
 5. Roll back a downstream environment to its previously approved digest; there is no environment to roll back in this lab.
 
 The GitHub repository is a source mirror. Publishing there does not verify GitLab runners or constitute a deployment. Never force-push or use `git push --mirror` against an existing repository. Fetch and review divergent history before any update.
+
+## Current hosted-CI blocker: account identity verification
+
+GitLab static CI lint passes, but pipeline simulation returns `Identity verification is required in order to run CI jobs`. Published pipeline [2985772695](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985772695) failed before creating any jobs; it has no YAML errors. This establishes an account-level pipeline-creation blocker; hosted job behavior has not yet been exercised.
+
+Sign in to GitLab as `SkynetAI-Labs`, open the project/pipeline, and select **Verify my account** in the alert. Complete only the email, phone, or payment-method verification GitLab requests in its own UI. Do not send identity details, one-time codes, payment information, or credentials through chat. After verification, create a new pipeline for `main` from **Build > Pipelines > New pipeline** and inspect all required jobs. See [GitLab's official troubleshooting instructions](https://docs.gitlab.com/ci/debugging/#error-identity-verification-is-required-in-order-to-run-ci-jobs). No account/security settings have been weakened to bypass this requirement.

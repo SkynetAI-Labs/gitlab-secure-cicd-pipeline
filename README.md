@@ -1,6 +1,8 @@
 ![GitLab Secure CI/CD Pipeline Engineering — Independent Portfolio Project](assets/project-banner.png)
 
-# Secure CI/CD pipeline engineering with GitLab
+# GitLab Secure CI/CD Pipeline Engineering
+
+[Canonical GitLab project](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline) · [GitHub source mirror](https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline)
 
 A working DevSecOps lab from SkynetAI-Labs: a release-risk API, a fail-closed GitLab pipeline, and an evidence-based commercial case study. GitLab is the canonical CI platform; a GitHub copy is a source mirror, not a second deployment system.
 
