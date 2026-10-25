@@ -1,0 +1,16 @@
+.git
+.venv
+__pycache__
+**/__pycache__
+**/*.py[cod]
+*.egg-info
+.pytest_cache
+.ruff_cache
+.coverage
+reports
+dist
+build
+.env*
+tests
+docs
+SETUP_HANDOVER.md

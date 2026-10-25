@@ -1,0 +1,8 @@
+-r requirements.in
+pytest
+pytest-cov
+ruff
+bandit
+pip-audit
+build
+setuptools==84.2.1

@@ -1,0 +1,87 @@
+{
+  "verified_at_utc": "2026-10-25T03:34:34+00:00",
+  "environment": "Ubuntu/WSL, Python 3.14.4; Docker 29.1.3; network approvals required",
+  "tests": {
+    "passed": 52,
+    "failed": 0,
+    "statement_coverage_percent": 100,
+    "branch_coverage_percent": 100,
+    "required_percent": 95
+  },
+  "ruff": "passed; source, tests, scripts",
+  "bandit_findings": 0,
+  "runtime_dependency_vulnerabilities": 0,
+  "tooling_dependency_vulnerabilities": 0,
+  "gitleaks_history_findings": 0,
+  "gitleaks_tree_findings": 0,
+  "negative_controls": {
+    "synthetic_secret": "rejected with exit 1",
+    "unsafe_subprocess": "rejected with exit 1"
+  },
+  "initial_debian_image_high_critical_findings": 48,
+  "final_alpine_image_high_critical_findings": 0,
+  "image_runtime": {
+    "uid": "10001:10001",
+    "read_only": true,
+    "capabilities": "ALL dropped",
+    "no_new_privileges": true,
+    "smoke": "health, allow, block and invalid-input passed"
+  },
+  "base_image": "python:3.14-alpine@sha256:601e99e090cb08c2784a42395487709500bc39930307fe72f3f11a8f3c430762",
+  "gitlab_static_lint": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "gitlab_hosted_execution": "Not verified: pipeline simulation requires GitLab account identity verification",
+  "deployment": "Not performed; registry publish is a manual pipeline option",
+  "scanner_limitations": [
+    "Trivy warned that third-party SBOM metadata can affect vulnerability detection. Results remain scanner evidence, not proof of absence of vulnerabilities."
+  ],
+  "verified_files": [
+    {
+      "path": ".gitlab-ci.yml",
+      "sha256": "5ccf30e97f4ea97a8ee8d4b29bf9cf3a64ff6b2ea66f6f52da42af806d35ec78"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "044cb3dade5b257052d53ff0cfb0f8fc00448dbbbd4ebf7a7c71c5e027b57dc4"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "037900884ddea17c655e21db12fc5cf827d439988d4d87eb49631a0b16db95ce"
+    },
+    {
+      "path": "requirements.lock",
+      "sha256": "adbd6a8105d7ec136574418c797574f262d33332677cfbd7648bc4f39a18329e"
+    },
+    {
+      "path": "requirements-ci.lock",
+      "sha256": "bbc8b4957970140dae2f69855cf2e0cb96304f9eec058060c2dd0fd78616ea22"
+    },
+    {
+      "path": "src/release_gate/__init__.py",
+      "sha256": "28154e2f585e3ef42f02580248b9da413b8fb1028ef288ee0d072cd50b000b88"
+    },
+    {
+      "path": "tests/test_api.py",
+      "sha256": "08b2021b52bcadf1216534e3639d9eacfa2eaab2c613379e19068e15a79479f9"
+    },
+    {
+      "path": "scripts/smoke.py",
+      "sha256": "b7cbabb10900c8321e59190b34d6ce06b9e3fc50810d479d3619a6eadf10c8c6"
+    },
+    {
+      "path": "scripts/test_controls.py",
+      "sha256": "6570b3d3753117769985d1350dafc8c1ee9974f6be4b8e233b9744a1417fe97c"
+    },
+    {
+      "path": "scripts/verify.sh",
+      "sha256": "bcd6246e95b37c3f7080bf49bf4d82ebad3aaf87ac3d4631c2b16a1b4d723bc9"
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "0f7e68420ddb6a2528d916143ee8a4e32c712beec83720e8e4e350c6a46a0806"
+    }
+  ]
+}

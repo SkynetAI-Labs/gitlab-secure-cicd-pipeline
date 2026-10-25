@@ -1,0 +1,153 @@
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"'
+      when: never
+    - if: '$CI_COMMIT_BRANCH'
+    - if: '$CI_COMMIT_TAG'
+
+stages: [verify, package, container, image_scan, release]
+
+default:
+  image: python:3.14-slim@sha256:35caba83af2fe6da9a5d922f9b0156f21d1246a48278c58a08bd253303ba42e8
+  interruptible: true
+  timeout: 10m
+
+variables:
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  GIT_DEPTH: "0"
+
+.python:
+  before_script:
+    - python -m pip install --require-hashes -r requirements-ci.lock
+  cache:
+    key:
+      files: [requirements-ci.lock]
+    paths: [.cache/pip/]
+
+quality_and_tests:
+  extends: .python
+  stage: verify
+  script:
+    - ruff check src tests scripts
+    - ruff format --check src tests scripts
+    - pytest
+  artifacts:
+    when: always
+    expire_in: 14 days
+    paths: [reports/]
+    reports:
+      junit: reports/junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: reports/coverage.xml
+
+static_analysis:
+  extends: .python
+  stage: verify
+  script:
+    - mkdir -p reports
+    - bandit -r src -f json -o reports/bandit.json -q
+  artifacts:
+    when: always
+    expire_in: 14 days
+    paths: [reports/bandit.json]
+
+dependency_audit:
+  extends: .python
+  stage: verify
+  script:
+    - mkdir -p reports
+    - pip-audit --require-hashes -r requirements.lock --format json --output reports/dependency-audit.json
+    - pip-audit --require-hashes -r requirements-ci.lock --format json --output reports/tooling-audit.json
+    - pip-audit --require-hashes -r requirements.lock --format cyclonedx-json --output reports/sbom.cdx.json
+  artifacts:
+    when: always
+    expire_in: 14 days
+    paths: [reports/*audit.json, reports/sbom.cdx.json]
+
+secret_detection:
+  stage: verify
+  image:
+    name: ghcr.io/gitleaks/gitleaks:v8.30.1@sha256:c00b6bd0aeb3071cbcb79009cb16a60dd9e0a7c60e2be9ab65d25e6bc8abbb7f
+    entrypoint: [""]
+  script:
+    - mkdir -p reports
+    - gitleaks git --redact --no-banner --report-format json --report-path reports/secrets-history.json .
+    - gitleaks dir --redact --no-banner --report-format json --report-path reports/secrets-tree.json .
+  artifacts:
+    when: always
+    expire_in: 7 days
+    paths: [reports/secrets-*.json]
+
+package:
+  extends: .python
+  stage: package
+  script:
+    - python -m build --no-isolation
+    - mkdir -p reports
+    - sha256sum dist/* > reports/SHA256SUMS
+  artifacts:
+    expire_in: 14 days
+    paths: [dist/, reports/SHA256SUMS]
+
+.docker:
+  image: docker:29-cli
+  services:
+    - name: docker:29-dind
+      alias: docker
+  variables:
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: /certs
+    DOCKER_TLS_VERIFY: "1"
+    DOCKER_CERT_PATH: /certs/client
+  before_script:
+    - docker info > /dev/null
+
+container_build:
+  extends: .docker
+  stage: container
+  script:
+    - docker build --pull -t "release-gate:$CI_COMMIT_SHA" .
+    - docker run -d --name release-gate --read-only --tmpfs /tmp:rw,noexec,nosuid,size=64m --cap-drop ALL --security-opt no-new-privileges -p 8080:8080 "release-gate:$CI_COMMIT_SHA"
+    - docker exec -i release-gate python - < scripts/smoke.py
+    - test "$(docker inspect --format '{{.Config.User}}' release-gate)" = "10001:10001"
+    - docker save "release-gate:$CI_COMMIT_SHA" -o image.tar
+  after_script:
+    - docker rm -f release-gate > /dev/null 2>&1 || true
+  artifacts:
+    expire_in: 1 day
+    paths: [image.tar]
+
+image_scan:
+  stage: image_scan
+  image:
+    name: aquasec/trivy:0.76.1@sha256:790fd66d1697395d8693d1acaa1ea702406a20f109b6fc7bac8db623eca6c06c
+    entrypoint: [""]
+  dependencies: [container_build]
+  script:
+    - mkdir -p reports
+    - trivy image --input image.tar --scanners vuln --severity HIGH,CRITICAL --exit-code 1 --format json --output reports/image-audit.json
+  artifacts:
+    when: always
+    expire_in: 14 days
+    paths: [reports/image-audit.json]
+
+publish_image:
+  extends: .docker
+  stage: release
+  interruptible: false
+  dependencies: [container_build]
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_COMMIT_REF_PROTECTED == "true"'
+      when: manual
+      allow_failure: true
+  script:
+    - test -n "$CI_REGISTRY_IMAGE"
+    - printf '%s' "$CI_REGISTRY_PASSWORD" | docker login "$CI_REGISTRY" --username "$CI_REGISTRY_USER" --password-stdin
+    - docker load -i image.tar
+    - docker tag "release-gate:$CI_COMMIT_SHA" "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA"
+    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA"
+  after_script:
+    - docker logout "$CI_REGISTRY" > /dev/null 2>&1 || true
