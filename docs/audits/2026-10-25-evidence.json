@@ -1,0 +1,539 @@
+{
+  "hosted": {
+    "jobs": [
+      {
+        "id": 17450537494,
+        "name": "publish_image",
+        "status": "manual",
+        "allow_failure": true
+      },
+      {
+        "id": 17450537493,
+        "name": "image_scan",
+        "status": "success",
+        "allow_failure": false
+      },
+      {
+        "id": 17450537492,
+        "name": "container_build",
+        "status": "success",
+        "allow_failure": false
+      },
+      {
+        "id": 17450537491,
+        "name": "package",
+        "status": "success",
+        "allow_failure": false
+      },
+      {
+        "id": 17450537490,
+        "name": "secret_detection",
+        "status": "success",
+        "allow_failure": false
+      },
+      {
+        "id": 17450537489,
+        "name": "dependency_audit",
+        "status": "success",
+        "allow_failure": false
+      },
+      {
+        "id": 17450537488,
+        "name": "static_analysis",
+        "status": "success",
+        "allow_failure": false
+      },
+      {
+        "id": 17450537487,
+        "name": "quality_and_tests",
+        "status": "success",
+        "allow_failure": false
+      }
+    ],
+    "reports/junit.xml": {
+      "attributes": {
+        "name": "pytest tests"
+      },
+      "test_suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "52",
+          "time": "0.208",
+          "timestamp": "2026-10-25T17:56:02.914844+00:00",
+          "hostname": "runner-nezyxejex-project-87904533-concurrent-0"
+        }
+      ]
+    },
+    "reports/coverage.xml": {
+      "attributes": {
+        "version": "7.17.0",
+        "timestamp": "1792950963117",
+        "lines-valid": "50",
+        "lines-covered": "50",
+        "line-rate": "1",
+        "branches-valid": "20",
+        "branches-covered": "20",
+        "branch-rate": "1",
+        "complexity": "0"
+      },
+      "test_suites": []
+    },
+    "prior_lab_preservation": {
+      "files_checked": 53,
+      "mismatches": [],
+      "basis": "published 58befca git objects against Lab 04 recorded pre-change hashes"
+    }
+  },
+  "scanner_artifacts": [
+    {
+      "job": "static_analysis",
+      "artifact": "reports/bandit.json",
+      "configured_findings": 0,
+      "sha256": "c43e75795afd140359b68bba54bebf3ea1ed9b4ee9b6f9a3c3d00bd7594e8be7",
+      "job_id": 17450537488
+    },
+    {
+      "job": "dependency_audit",
+      "artifact": "reports/dependency-audit.json",
+      "configured_findings": 0,
+      "sha256": "c29edd6fe40b310f2010efb5cab83ec347a6900cfa70488f740d4a35a50ddb21",
+      "job_id": 17450537489
+    },
+    {
+      "job": "dependency_audit",
+      "artifact": "reports/tooling-audit.json",
+      "configured_findings": 0,
+      "sha256": "f3cc5aa2d2ec12256e6377a78b6845be57b217fede378af5a74f19308ef370c7",
+      "job_id": 17450537489
+    },
+    {
+      "job": "secret_detection",
+      "artifact": "reports/secrets-history.json",
+      "configured_findings": 0,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "job_id": 17450537490
+    },
+    {
+      "job": "secret_detection",
+      "artifact": "reports/secrets-tree.json",
+      "configured_findings": 0,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "job_id": 17450537490
+    },
+    {
+      "job": "image_scan",
+      "artifact": "reports/image-audit.json",
+      "configured_findings": 0,
+      "sha256": "a4fea40ee74a5f34cee5cdf724dafbf47c7220f8955be363fdc9df0ff4d4095a",
+      "job_id": 17450537493
+    }
+  ],
+  "workbook": {
+    "illustration": {
+      "B": {
+        "economic_tco": 14100.0,
+        "cash_outlay": 2400,
+        "formula_outputs_independently_checked": 10
+      },
+      "C": {
+        "economic_tco": 11800.0,
+        "cash_outlay": 3100,
+        "formula_outputs_independently_checked": 10
+      },
+      "D": {
+        "economic_tco": 12810.000000000002,
+        "cash_outlay": 2310,
+        "formula_outputs_independently_checked": 10
+      }
+    },
+    "blank_scenario_cached_outputs_incomplete": 99,
+    "external_workbook_links": 0,
+    "macros": false,
+    "calculation_engine": "Independent arithmetic and formula inspection; Excel/LibreOffice input-change recalculation not performed"
+  },
+  "downloads": {
+    "downloads": [
+      {
+        "platform": "GitHub",
+        "path": "assets/project-banner.png",
+        "sha256": "d3b86329f9c7f53677e99c9c0f4215cf08a37bb838f5a4d0ae6ac933d5e7bab1",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-02/assets/lab-02-banner.png",
+        "sha256": "4ab0d9a919fe15dbafa162ac67ea678a6fa809a08bce49906f863401d026cf29",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-02/cost-model-template.xlsx",
+        "sha256": "09631f943583711fc860261868f907bbcb86013857adce970c27dabef82994bc",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-03/assets/lab-03-banner.png",
+        "sha256": "3d77313749363903906b0adb8f17ccbe5103958f8d1f2e9644bb2f3391b4facc",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-03/stakeholder-map.csv",
+        "sha256": "8c601bccbc65e154fb8ab3340906b46dc097bc89fd9fd7119dc45fa653fc9ebb",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-03/mutual-action-plan.csv",
+        "sha256": "420950cb15901ff7470f0853d646cfe54df471fef26c0efb5ff641d9c176aa0a",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-04/assets/lab-04-banner.png",
+        "sha256": "2acb1805055491b196f983dd7b57baa0ed46611a4bca220e31c263e771ce87f3",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-04/model-inputs.json",
+        "sha256": "c9f700037f43e99f6f57e23b61e9556ba171c7b62f707856b498a60e2fc342c6",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-04/model-results.json",
+        "sha256": "63102088f809aff33d095856a9dfce80553833a7b3bfb277af3a6c2a024b497d",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-04/fictional-accounts.csv",
+        "sha256": "0153b180c55da25fea91ef9a186d7550839b97586f18309473e0247c29b6e43f",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-04/prioritisation-template.csv",
+        "sha256": "5f03d3d0169bdf48ec7dd310dfeea3cefbb0e3025fba2f05e4bc777ca259c0d7",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-04/sequence-template.csv",
+        "sha256": "3c7b1b8fed99c51cba3539460db50218e64a8e66ca0336ff6b0260b224d8cd65",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitHub",
+        "path": "docs/commercial/lab-04/calculate_models.py",
+        "sha256": "482178acd7f8cd46e942d6e132698d27b7b9efaa19be3695a1cc653e0f5e1fe0",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "assets/project-banner.png",
+        "sha256": "d3b86329f9c7f53677e99c9c0f4215cf08a37bb838f5a4d0ae6ac933d5e7bab1",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-02/assets/lab-02-banner.png",
+        "sha256": "4ab0d9a919fe15dbafa162ac67ea678a6fa809a08bce49906f863401d026cf29",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-02/cost-model-template.xlsx",
+        "sha256": "09631f943583711fc860261868f907bbcb86013857adce970c27dabef82994bc",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-03/assets/lab-03-banner.png",
+        "sha256": "3d77313749363903906b0adb8f17ccbe5103958f8d1f2e9644bb2f3391b4facc",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-03/stakeholder-map.csv",
+        "sha256": "8c601bccbc65e154fb8ab3340906b46dc097bc89fd9fd7119dc45fa653fc9ebb",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-03/mutual-action-plan.csv",
+        "sha256": "420950cb15901ff7470f0853d646cfe54df471fef26c0efb5ff641d9c176aa0a",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-04/assets/lab-04-banner.png",
+        "sha256": "2acb1805055491b196f983dd7b57baa0ed46611a4bca220e31c263e771ce87f3",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-04/model-inputs.json",
+        "sha256": "c9f700037f43e99f6f57e23b61e9556ba171c7b62f707856b498a60e2fc342c6",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-04/model-results.json",
+        "sha256": "63102088f809aff33d095856a9dfce80553833a7b3bfb277af3a6c2a024b497d",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-04/fictional-accounts.csv",
+        "sha256": "0153b180c55da25fea91ef9a186d7550839b97586f18309473e0247c29b6e43f",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-04/prioritisation-template.csv",
+        "sha256": "5f03d3d0169bdf48ec7dd310dfeea3cefbb0e3025fba2f05e4bc777ca259c0d7",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-04/sequence-template.csv",
+        "sha256": "3c7b1b8fed99c51cba3539460db50218e64a8e66ca0336ff6b0260b224d8cd65",
+        "matches_git_object": true
+      },
+      {
+        "platform": "GitLab",
+        "path": "docs/commercial/lab-04/calculate_models.py",
+        "sha256": "482178acd7f8cd46e942d6e132698d27b7b9efaa19be3695a1cc653e0f5e1fe0",
+        "matches_git_object": true
+      }
+    ],
+    "anchors": [
+      {
+        "file": "docs\\original-gitlab-readme.md",
+        "target": "#editing-this-readme",
+        "resolved": true
+      },
+      {
+        "file": "docs\\VERIFICATION.md",
+        "target": "OPERATIONS.md#resolved-hosted-ci-prerequisite-account-identity-verification",
+        "resolved": true
+      }
+    ]
+  },
+  "docker_pins": [
+    {
+      "image": "docker:29-cli",
+      "digest": "sha256:5e6baf67325a79f64ed3bed6863954d5e05d0f3d4e57cbdb14809346814bbfdb",
+      "source": "https://registry-1.docker.io/v2/library/docker/manifests/29-cli",
+      "manifest_bytes_verified": true
+    },
+    {
+      "image": "docker:29-dind",
+      "digest": "sha256:9e79b879b177fbd72c34376a3dd3d91747da5db49e1f560f76aea59561471977",
+      "source": "https://registry-1.docker.io/v2/library/docker/manifests/29-dind",
+      "manifest_bytes_verified": true
+    }
+  ],
+  "baseline_api_probes": {
+    "duplicate_high": {
+      "status": 200,
+      "json": {
+        "decision": "allow",
+        "reasons": []
+      }
+    },
+    "duplicate_secret": {
+      "status": 200,
+      "json": {
+        "decision": "allow",
+        "reasons": []
+      }
+    },
+    "deep_nesting": {
+      "status": 400,
+      "json": {
+        "error": "Exactly the documented six fields are required"
+      }
+    }
+  },
+  "model": {
+    "saved_results_reproduced": true,
+    "qualified_expectations": [
+      "0.09",
+      "0.6",
+      "1.7496"
+    ],
+    "total_hours": "72.5",
+    "headroom_hours": "7.5",
+    "invalid_cases_rejected": 12
+  },
+  "links": {
+    "relative_file_links_checked": 168,
+    "missing": [],
+    "public_urls": [
+      "https://docs.github.com/en/actions/get-started/understand-github-actions",
+      "https://docs.github.com/en/billing/get-started/how-billing-works",
+      "https://docs.github.com/en/code-security/getting-started/github-security-features",
+      "https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security",
+      "https://docs.gitlab.com/ci/",
+      "https://docs.gitlab.com/ci/debugging/#error-identity-verification-is-required-in-order-to-run-ci-jobs",
+      "https://docs.gitlab.com/ci/environments/protected_environments/",
+      "https://docs.gitlab.com/ci/quick_start/",
+      "https://docs.gitlab.com/topics/autodevops/requirements/",
+      "https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository",
+      "https://docs.gitlab.com/user/application_security/",
+      "https://docs.gitlab.com/user/application_security/container_scanning/#features",
+      "https://docs.gitlab.com/user/application_security/dependency_scanning/",
+      "https://docs.gitlab.com/user/application_security/sast/",
+      "https://docs.gitlab.com/user/application_security/sast/#features",
+      "https://docs.gitlab.com/user/application_security/vulnerability_report/",
+      "https://docs.gitlab.com/user/clusters/agent/",
+      "https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically",
+      "https://docs.gitlab.com/user/project/members/",
+      "https://docs.gitlab.com/user/project/merge_requests/approvals/",
+      "https://docs.gitlab.com/user/project/merge_requests/auto_merge/",
+      "https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/",
+      "https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file",
+      "https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file",
+      "https://docs.pytest.org/en/stable/how-to/cache.html",
+      "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+      "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-02/README.md",
+      "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-03/README.md",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-02/README.md",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-03/README.md",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985772695",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985809359",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2985812654",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986537496",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986559952",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986574876",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986595517",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986687563",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/settings/integrations",
+      "https://handbook.gitlab.com/handbook/sales/command-of-the-message/metrics/",
+      "https://handbook.gitlab.com/handbook/sales/meddppicc/",
+      "https://handbook.gitlab.com/handbook/sales/playbook/",
+      "https://handbook.gitlab.com/handbook/sales/sales-operating-procedures/deal-closure/",
+      "https://handbook.gitlab.com/handbook/sales/sales-operating-procedures/facilitate-the-opportunity/",
+      "https://www.makeareadme.com/"
+    ]
+  },
+  "banners": [
+    {
+      "path": "assets\\project-banner.png",
+      "dimensions": [
+        1800,
+        640
+      ],
+      "sha256": "d3b86329f9c7f53677e99c9c0f4215cf08a37bb838f5a4d0ae6ac933d5e7bab1"
+    },
+    {
+      "path": "docs\\commercial\\lab-02\\assets\\lab-02-banner.png",
+      "dimensions": [
+        1800,
+        640
+      ],
+      "sha256": "4ab0d9a919fe15dbafa162ac67ea678a6fa809a08bce49906f863401d026cf29"
+    },
+    {
+      "path": "docs\\commercial\\lab-03\\assets\\lab-03-banner.png",
+      "dimensions": [
+        1800,
+        640
+      ],
+      "sha256": "3d77313749363903906b0adb8f17ccbe5103958f8d1f2e9644bb2f3391b4facc"
+    },
+    {
+      "path": "docs\\commercial\\lab-04\\assets\\lab-04-banner.png",
+      "dimensions": [
+        1800,
+        640
+      ],
+      "sha256": "2acb1805055491b196f983dd7b57baa0ed46611a4bca220e31c263e771ce87f3"
+    }
+  ],
+  "baseline_commit": "58befcae77281f6e62835c46ebaa0a9a89e53a91",
+  "local_fix_tests": {
+    "passed": 84,
+    "api_line_coverage_percent": 100,
+    "api_branch_coverage_percent": 100,
+    "runtime": "Windows Python 3.12.14 diagnostic only",
+    "ruff": "passed",
+    "bandit": "passed",
+    "hosted_fix_pipeline": "pending"
+  },
+  "ubuntu_continuation": {
+    "checked_at_utc": "2026-10-25T18:45:14.322042+00:00",
+    "python": "Python 3.14.4",
+    "platform": "Ubuntu/Linux",
+    "tests": 84,
+    "api_tests": 59,
+    "commercial_tests": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "api_line_coverage": "1",
+    "api_branch_coverage": "1",
+    "ruff": "passed",
+    "bandit_findings": 0,
+    "runtime_dependency_findings": 0,
+    "tooling_dependency_findings": 0,
+    "sbom_and_build": "passed",
+    "secret_scanning": {
+      "version": "8.30.1",
+      "history_findings": 0,
+      "tree_findings": 0,
+      "redacted": true
+    },
+    "scanner_negative_controls": "passed; synthetic fixtures removed",
+    "ci_lint": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "container": {
+      "image": "gitlab-release-gate:audit-20261025",
+      "image_id": "sha256:8d682d7cf2d431cdfe577c2389356bc773ade677b5301dda033dc132ff72293b",
+      "smoke": "passed",
+      "duplicate_field_probe": "HTTP 400 generic Bad Request",
+      "user": "10001:10001",
+      "read_only": true,
+      "cap_drop": [
+        "ALL"
+      ],
+      "no_new_privileges": true,
+      "build_network": "host; initial default build DNS failure; system settings unchanged"
+    },
+    "image_high_critical_findings": {
+      "HIGH": 0,
+      "CRITICAL": 0
+    },
+    "official_docker_manifests": [
+      {
+        "official_repository": "docker.io/library/docker",
+        "tag": "29-cli",
+        "pinned_digest": "sha256:5e6baf67325a79f64ed3bed6863954d5e05d0f3d4e57cbdb14809346814bbfdb",
+        "manifest_bytes_match": true
+      },
+      {
+        "official_repository": "docker.io/library/docker",
+        "tag": "29-dind",
+        "pinned_digest": "sha256:9e79b879b177fbd72c34376a3dd3d91747da5db49e1f560f76aea59561471977",
+        "manifest_bytes_match": true
+      }
+    ],
+    "preserved_baseline_file_count": 69,
+    "commercial_content_and_historical_evidence_unchanged": true,
+    "input_patch_sha256": "acadc56c51315feabb2170c8e46bdd904fad76332c358699d9f9135de2d58575",
+    "git_apply_check": "passed",
+    "patch_reconciliation": "Removed one duplicated newly-added handover paragraph; pre-existing history unchanged",
+    "publication": "Final commit published only after these checks; hosted status and matching final SHA are recorded outside tracked files after publication"
+  }
+}

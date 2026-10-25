@@ -111,3 +111,35 @@ def test_oversized_body(client):
 def test_unknown_route_and_wrong_method(client):
     assert client.get("/unknown").status_code == 404
     assert client.get("/evaluate").status_code == 405
+
+
+@pytest.mark.parametrize(
+    "duplicate",
+    [
+        '"critical":1,"critical":0',
+        '"high":1,"high":0',
+        '"medium":1,"medium":0',
+        '"low":1,"low":0',
+        '"tests_passed":false,"tests_passed":true',
+        '"secrets_found":true,"secrets_found":false',
+    ],
+)
+def test_duplicate_fields_rejected(client, summary, duplicate):
+    import json
+
+    key = duplicate.split('"')[1]
+    del summary[key]
+    payload = json.dumps(summary)[:-1] + "," + duplicate + "}"
+    response = client.post("/evaluate", data=payload, content_type="application/json")
+    assert response.status_code == 400
+    assert response.json == {"error": "Bad Request"}
+
+
+def test_duplicate_non_schema_field_is_not_echoed(client):
+    response = client.post(
+        "/evaluate",
+        data='{"private-probe":1,"private-probe":2}',
+        content_type="application/json",
+    )
+    assert response.status_code == 400
+    assert b"private-probe" not in response.data

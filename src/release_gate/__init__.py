@@ -1,11 +1,28 @@
 """Release-risk demonstration API. No deployment authority is granted by this service."""
 
 from flask import Flask, jsonify, request
+from flask.json.provider import DefaultJSONProvider
 from werkzeug.exceptions import HTTPException
 
 COUNTERS = ("critical", "high", "medium", "low")
 FIELDS = frozenset((*COUNTERS, "tests_passed", "secrets_found"))
 MAX_FINDINGS = 1_000_000
+
+
+def unique_json_object(pairs):
+    """Reject ambiguous JSON objects before any release decision is evaluated."""
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError("Duplicate JSON fields are not permitted")
+        result[key] = value
+    return result
+
+
+class StrictJSONProvider(DefaultJSONProvider):
+    def loads(self, value, **kwargs):
+        kwargs["object_pairs_hook"] = unique_json_object
+        return super().loads(value, **kwargs)
 
 
 def evaluate(payload: object) -> dict:
@@ -33,6 +50,7 @@ def evaluate(payload: object) -> dict:
 
 def create_app() -> Flask:
     app = Flask(__name__)
+    app.json = StrictJSONProvider(app)
     app.config.update(MAX_CONTENT_LENGTH=4096, DEBUG=False, TESTING=False)
 
     @app.after_request

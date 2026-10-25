@@ -6,11 +6,11 @@ Assets: source history, CI job credentials, dependency locks, build artifacts, r
 
 | Threat | Implemented control | Remaining limit |
 | --- | --- | --- |
-| Malformed or excessive input | Exact schema, strict types, bounded counts, 4 KiB body limit, generic protocol errors | Gateway rate limiting and TLS remain deployment responsibilities |
+| Malformed or excessive input | Exact schema, rejection of duplicate JSON keys, strict types, bounded counts, 4 KiB body limit, generic protocol errors | Gateway rate limiting and TLS remain deployment responsibilities |
 | Secret committed to source | Full-history and tree Gitleaks scans with redaction | A scanner cannot detect every secret; rotate exposed credentials rather than relying on deletion |
 | Unsafe Python implementation | Bandit and negative-control detection test | Static analysis is incomplete; review remains necessary |
 | Vulnerable dependencies | Hash-locked runtime/tooling dependencies, pip-audit gates, Trivy image gate | Advisory feeds can lag; rerun scans and update locks/base images regularly |
-| Dependency substitution | SHA-256 package hashes and pinned Python base digest | Hashes verify approved bytes, not maintainer integrity; scanner images also require review |
+| Dependency substitution | SHA-256 package hashes and pinned Python, Docker CLI/DinD and scanner image digests | Hashes verify approved bytes, not maintainer integrity; scanner images also require review |
 | Container compromise | Numeric non-root UID, no capabilities, read-only runtime test, tmpfs, no-new-privileges | Kernel isolation and runner security are external dependencies |
 | Unverified release | Staged gates, commit-tagged image, manual publication on protected default branch | No signing or attestation verification yet; no production deployment configured |
 | Pipeline credential theft | No secrets in files/logs; registry password uses stdin and ephemeral CI credentials | Pipeline editors can exfiltrate secrets; restrict protected runners, branches, and variables |

@@ -18,7 +18,7 @@ A working DevSecOps lab from SkynetAI-Labs: a release-risk API, a fail-closed Gi
 ## What the project demonstrates
 
 - A Flask API validates scan summaries and blocks release decisions when tests fail, secrets are detected, or high/critical findings exist.
-- 52 API and policy tests include malformed JSON, body-size limits, incorrect types, and all blocking conditions. The coverage threshold is 95% with branch coverage enabled.
+- API and policy tests include malformed or duplicate-key JSON, body-size limits, incorrect types, and all blocking conditions. The coverage threshold is 95% with branch coverage enabled. Commercial-model regression tests also check reproducibility, gates, conditional funnel arithmetic and capacity assumptions.
 - Ruff, Bandit, Gitleaks, and pip-audit gate packaging. Runtime and CI dependencies are version- and hash-locked.
 - A non-root, digest-pinned multi-stage container runs with a read-only filesystem and reduced privileges during smoke verification.
 - Trivy blocks high/critical image vulnerabilities, including those without fixes. Scanner failures also block progress.
@@ -50,7 +50,7 @@ curl --fail http://127.0.0.1:8080/healthz
 curl --fail -H 'Content-Type: application/json' -d '{"critical":0,"high":0,"medium":2,"low":4,"tests_passed":true,"secrets_found":false}' http://127.0.0.1:8080/evaluate
 ```
 
-The response is `{"decision":"allow","reasons":[]}`. A high finding returns `block` with `high_findings`. Both are HTTP 200 business decisions; invalid summaries return HTTP 400, non-JSON bodies 415, oversized bodies 413. Counts must be nonnegative integers at most 1,000,000; booleans cannot substitute for counts. All six fields are mandatory and extra fields are rejected.
+The response is `{"decision":"allow","reasons":[]}`. A high finding returns `block` with `high_findings`. Both are HTTP 200 business decisions; invalid summaries return HTTP 400, non-JSON bodies 415, oversized bodies 413. Counts must be nonnegative integers at most 1,000,000; booleans cannot substitute for counts. All six fields are mandatory. Extra fields and duplicate JSON field names are rejected.
 
 ## Container
 
@@ -75,6 +75,7 @@ Container jobs require a Docker executor supporting privileged Docker-in-Docker 
 - [Threat model and security policy](docs/SECURITY.md).
 - [Commercial case study](docs/CASE_STUDY.md): buyer problem, control mapping, illustrative economics, and adoption plan.
 - [Setup handover](SETUP_HANDOVER.md): preserved setup history.
+- [Four-lab deep audit](docs/audits/2026-10-25.md): findings, prepared fixes and verification boundaries.
 - [Original GitLab README](docs/original-gitlab-readme.md): starter content preserved before replacement.
 
 No license has been selected; publication alone does not grant an open-source license. No customer, certification, production deployment, or measured financial saving is claimed.
