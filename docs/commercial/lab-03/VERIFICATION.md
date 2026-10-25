@@ -11,9 +11,17 @@ Scope: the independent enterprise-buying portfolio toolkit. The verified baselin
 - Verified all 38 other existing tracked files against the baseline, including Lab 01's source/CI and the full Lab 02 section. Main README changes are navigation-only and handover history is preserved.
 - Checked ten referenced public source/project URLs for HTTP success, reviewed the scoped diff and ran redacted history/tree secret scans with no findings. Detailed outcomes are in [verification.json](verification.json).
 
-## Publication checks
+## Completed publication and rendering checks
 
-Public README/navigation, banner/template/diagram rendering, published artifact hashes and the hosted pipeline are checked after source publication. Pending checks are not recorded as successful. This section and the machine-readable record will be completed with observed results.
+- Published the toolkit to the existing [GitLab Lab 03 README](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-03/README.md) and [GitHub Lab 03 README](https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-03/README.md). No new remote repository was created; GitHub's separate technical Lab 03 was not touched.
+- Chromium followed main-README navigation on both platforms and verified the Lab 03 title, six-minute walkthrough, banner and both template links. The Lab 01 banner and Lab 02 navigation remained present.
+- The banner loaded at **1800 × 640** natural dimensions on both platforms. Rendered dimensions at a 1440 × 1000 viewport are in the machine-readable record. Public banner screenshots were retained locally under ignored `reports/`.
+- The committee and journey pages rendered real Mermaid SVGs on both platforms. Checked **all nine role IDs** and **all eight gate IDs**, positive visible dimensions and screenshots. Committee and journey screenshots were visually reviewed. Platform layout differences are not a performance or feature benchmark.
+- Downloaded PNG/SVG banners and both CSV templates from each platform; **all eight SHA-256 comparisons matched** the verified local files.
+- [Pipeline 2986595517](https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986595517) passed for source-publication commit `a723bc09810a57e5178cabbba7075a05d7aeb977`. All seven required jobs succeeded. Hosted JUnit/Cobertura artifacts confirm **52 tests**, no failures/errors/skips, and **100% line and branch coverage**. The image report contains **zero HIGH/CRITICAL findings**. The optional registry job remained manual.
+- Checked Lab 02's eight discovery-card questions against the implemented Lab 03 pages: **zero repeated questions**. All 38 existing baseline files outside the allowed main-README/handover changes remain unchanged, including the full Lab 02 section and the retained planning outline.
+
+The record in [verification.json](verification.json) retains dated source, local link/CSV/preservation, browser, download and hosted-job evidence. The final record is synced to both repositories and final `main` equality/checkout cleanliness are confirmed at completion. Subsequent documentation-only commits may create newer pipelines; the source-publication result above remains the recorded historical run.
 
 ## Evidence limits
 

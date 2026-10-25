@@ -2,17 +2,20 @@
   "checked_at_utc": "2026-10-25T13:59:17+00:00",
   "scope": "Independent enterprise-buying portfolio toolkit; no actual buyer engagement or paid-product trial",
   "local_checks": {
-    "checked_at_utc": "2026-10-25T13:59:17+00:00",
+    "checked_at_utc": "2026-10-25T14:11:04+00:00",
     "baseline_commit": "ff14a45ab522b8d2c995897c3dc85126bb723a43",
     "markdown_files_checked": 12,
-    "local_links_and_anchors_checked": 71,
+    "local_links_and_anchors_checked": 72,
     "external_urls": [
       "https://docs.gitlab.com/ci/",
       "https://docs.gitlab.com/user/application_security/sast/#features",
       "https://docs.gitlab.com/user/application_security/vulnerability_report/",
       "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+      "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-03/README.md",
       "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-03/README.md",
       "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986574876",
+      "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986595517",
       "https://handbook.gitlab.com/handbook/sales/meddppicc/",
       "https://handbook.gitlab.com/handbook/sales/playbook/",
       "https://handbook.gitlab.com/handbook/sales/sales-operating-procedures/deal-closure/",
@@ -253,7 +256,9 @@
     "gates": "G1\u2013G8 are proposed and unagreed",
     "lab_02_reuse": "Linked existing discovery, comparison, objections, cost model and pilot; no duplicated discovery card deck",
     "outline_status": "Original outline retained unchanged as planning history",
-    "product_claims": "Selected SAST/reporting and CI facts linked to current primary sources; no paid feature execution claimed"
+    "product_claims": "Selected SAST/reporting and CI facts linked to current primary sources; no paid feature execution claimed",
+    "lab_02_discovery_card_questions_checked": 8,
+    "lab_02_discovery_card_questions_repeated": 0
   },
   "secret_scanning": {
     "tool": "Gitleaks v8.30.1",
@@ -262,8 +267,266 @@
     "history_findings": 0
   },
   "publication": {
-    "status": "Pending source publication and browser verification; not counted as passed",
-    "destinations": "Existing GitLab canonical project and GitHub source mirror only"
+    "status": "Verified on GitLab and GitHub",
+    "source_publication_commit": "a723bc09810a57e5178cabbba7075a05d7aeb977",
+    "browser_rendering": {
+      "checked_at_utc": "2026-10-25T14:09:13+00:00",
+      "method": "Public Chromium pages; root navigation and banner loaded, templates linked, Mermaid SVGs inspected for all role/gate labels",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "checks": [
+        {
+          "platform": "GitLab",
+          "root_http_status": 200,
+          "main_navigation_href": "/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-03/README.md",
+          "lab_01_banner_present": true,
+          "lab_02_navigation_present": true,
+          "readme_url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-03/README.md",
+          "title_present": true,
+          "walkthrough_present": true,
+          "template_links_present": true,
+          "banner": {
+            "naturalWidth": 1800,
+            "naturalHeight": 640,
+            "renderedWidth": 765,
+            "renderedHeight": 272,
+            "source": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/docs/commercial/lab-03/assets/lab-03-banner.png"
+          },
+          "diagrams": [
+            {
+              "page": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-03/BUYING_COMMITTEE.md",
+              "document": "BUYING_COMMITTEE.md",
+              "rendered_svg": true,
+              "expected_role_or_gate_labels": [
+                "R1",
+                "R2",
+                "R3",
+                "R4",
+                "R5",
+                "R6",
+                "R7",
+                "R8",
+                "R9"
+              ],
+              "all_expected_labels_present": true,
+              "width": 749,
+              "height": 305.953125,
+              "screenshot": "Public viewport captured after scrolling to rendered SVG"
+            },
+            {
+              "page": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/blob/main/docs/commercial/lab-03/BUYING_PROCESS.md",
+              "document": "BUYING_PROCESS.md",
+              "rendered_svg": true,
+              "expected_role_or_gate_labels": [
+                "G1",
+                "G2",
+                "G3",
+                "G4",
+                "G5",
+                "G6",
+                "G7",
+                "G8"
+              ],
+              "all_expected_labels_present": true,
+              "width": 749,
+              "height": 567.390625,
+              "screenshot": "Public viewport captured after scrolling to rendered SVG"
+            }
+          ],
+          "verified": true
+        },
+        {
+          "platform": "GitHub",
+          "root_http_status": 200,
+          "main_navigation_href": "/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-03/README.md",
+          "lab_01_banner_present": true,
+          "lab_02_navigation_present": true,
+          "readme_url": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-03/README.md",
+          "title_present": true,
+          "walkthrough_present": true,
+          "template_links_present": true,
+          "banner": {
+            "naturalWidth": 1800,
+            "naturalHeight": 640,
+            "renderedWidth": 1012,
+            "renderedHeight": 360,
+            "source": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/raw/main/docs/commercial/lab-03/assets/lab-03-banner.png"
+          },
+          "diagrams": [
+            {
+              "page": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-03/BUYING_COMMITTEE.md",
+              "document": "BUYING_COMMITTEE.md",
+              "rendered_svg": true,
+              "expected_role_or_gate_labels": [
+                "R1",
+                "R2",
+                "R3",
+                "R4",
+                "R5",
+                "R6",
+                "R7",
+                "R8",
+                "R9"
+              ],
+              "all_expected_labels_present": true,
+              "width": 632,
+              "height": 592,
+              "screenshot": "Public viewport captured after scrolling to rendered SVG"
+            },
+            {
+              "page": "https://github.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/blob/main/docs/commercial/lab-03/BUYING_PROCESS.md",
+              "document": "BUYING_PROCESS.md",
+              "rendered_svg": true,
+              "expected_role_or_gate_labels": [
+                "G1",
+                "G2",
+                "G3",
+                "G4",
+                "G5",
+                "G6",
+                "G7",
+                "G8"
+              ],
+              "all_expected_labels_present": true,
+              "width": 573,
+              "height": 704,
+              "screenshot": "Public viewport captured after scrolling to rendered SVG"
+            }
+          ],
+          "verified": true
+        }
+      ]
+    },
+    "download_hash_checks": {
+      "checked_at_utc": "2026-10-25T14:04:45+00:00",
+      "checks": [
+        {
+          "platform": "GitLab",
+          "file": "assets/lab-03-banner.png",
+          "url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/docs/commercial/lab-03/assets/lab-03-banner.png",
+          "matches_verified_local_file": true,
+          "sha256": "3d77313749363903906b0adb8f17ccbe5103958f8d1f2e9644bb2f3391b4facc"
+        },
+        {
+          "platform": "GitLab",
+          "file": "assets/lab-03-banner.svg",
+          "url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/docs/commercial/lab-03/assets/lab-03-banner.svg",
+          "matches_verified_local_file": true,
+          "sha256": "429cb018c9d11be0cb2693a22a4869669bd804f79834a358c453215ccf5319ea"
+        },
+        {
+          "platform": "GitLab",
+          "file": "stakeholder-map.csv",
+          "url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/docs/commercial/lab-03/stakeholder-map.csv",
+          "matches_verified_local_file": true,
+          "sha256": "8c601bccbc65e154fb8ab3340906b46dc097bc89fd9fd7119dc45fa653fc9ebb"
+        },
+        {
+          "platform": "GitLab",
+          "file": "mutual-action-plan.csv",
+          "url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/raw/main/docs/commercial/lab-03/mutual-action-plan.csv",
+          "matches_verified_local_file": true,
+          "sha256": "420950cb15901ff7470f0853d646cfe54df471fef26c0efb5ff641d9c176aa0a"
+        },
+        {
+          "platform": "GitHub",
+          "file": "assets/lab-03-banner.png",
+          "url": "https://raw.githubusercontent.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/main/docs/commercial/lab-03/assets/lab-03-banner.png",
+          "matches_verified_local_file": true,
+          "sha256": "3d77313749363903906b0adb8f17ccbe5103958f8d1f2e9644bb2f3391b4facc"
+        },
+        {
+          "platform": "GitHub",
+          "file": "assets/lab-03-banner.svg",
+          "url": "https://raw.githubusercontent.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/main/docs/commercial/lab-03/assets/lab-03-banner.svg",
+          "matches_verified_local_file": true,
+          "sha256": "429cb018c9d11be0cb2693a22a4869669bd804f79834a358c453215ccf5319ea"
+        },
+        {
+          "platform": "GitHub",
+          "file": "stakeholder-map.csv",
+          "url": "https://raw.githubusercontent.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/main/docs/commercial/lab-03/stakeholder-map.csv",
+          "matches_verified_local_file": true,
+          "sha256": "8c601bccbc65e154fb8ab3340906b46dc097bc89fd9fd7119dc45fa653fc9ebb"
+        },
+        {
+          "platform": "GitHub",
+          "file": "mutual-action-plan.csv",
+          "url": "https://raw.githubusercontent.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/main/docs/commercial/lab-03/mutual-action-plan.csv",
+          "matches_verified_local_file": true,
+          "sha256": "420950cb15901ff7470f0853d646cfe54df471fef26c0efb5ff641d9c176aa0a"
+        }
+      ]
+    },
+    "hosted_pipeline": {
+      "checked_at_utc": "2026-10-25T14:07:12+00:00",
+      "pipeline": {
+        "id": 2986595517,
+        "sha": "a723bc09810a57e5178cabbba7075a05d7aeb977",
+        "ref": "main",
+        "status": "success",
+        "web_url": "https://gitlab.com/SkynetAI-Labs/gitlab-secure-cicd-pipeline/-/pipelines/2986595517",
+        "finished_at": "2026-10-25T14:03:53.910Z"
+      },
+      "jobs": [
+        {
+          "name": "publish_image",
+          "status": "manual",
+          "allow_failure": true
+        },
+        {
+          "name": "image_scan",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "name": "container_build",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "name": "package",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "name": "secret_detection",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "name": "dependency_audit",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "name": "static_analysis",
+          "status": "success",
+          "allow_failure": false
+        },
+        {
+          "name": "quality_and_tests",
+          "status": "success",
+          "allow_failure": false
+        }
+      ],
+      "hosted_junit": {
+        "tests": 52,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "coverage_percent": {
+        "lines": 100,
+        "branches": 100
+      },
+      "image_high_critical_findings": 0,
+      "optional_registry_job": "Left manual; not executed"
+    },
+    "destinations": "Existing canonical GitLab project and existing GitHub source mirror; no new remote repository",
+    "final_sync_note": "Final record commits are published to both remotes; their matching main commits and clean checkout are confirmed at completion"
   },
   "limits": [
     "No real buyer interviews, validated stakeholders or procurement activity",
@@ -271,5 +534,6 @@
     "No paid-product trial or equivalent platform benchmark",
     "No outreach or named hiring contact",
     "No deployment or optional registry publication"
-  ]
+  ],
+  "final_recorded_at_utc": "2026-10-25T14:11:04+00:00"
 }
